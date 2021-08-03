@@ -1,0 +1,6 @@
+/env
+/web_kacang/node_modules
+__pycache__
+audio
+barcode
+ktp

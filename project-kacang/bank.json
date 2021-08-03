@@ -1,0 +1,54 @@
+{
+    "393465791674056704": {
+        "wallet": 50,
+        "bank": 19914656
+    },
+    "809796709202788403": {
+        "wallet": 1000,
+        "bank": 11332
+    },
+    "813983242532945970": {
+        "wallet": 570,
+        "bank": 111999
+    },
+    "756337264644194404": {
+        "wallet": 50,
+        "bank": 11726
+    },
+    "794583076243505153": {
+        "wallet": 1000,
+        "bank": 10000
+    },
+    "<property object at 0x0000018181CA5680>": {
+        "wallet": 0,
+        "bank": 0
+    },
+    "<property object at 0x000001DD29464720>": {
+        "wallet": 0,
+        "bank": 0
+    },
+    "<property object at 0x0000015AFFB647C0>": {
+        "wallet": 0,
+        "bank": 0
+    },
+    "<property object at 0x000001A6307E3810>": {
+        "wallet": 0,
+        "bank": 0
+    },
+    "<property object at 0x0000028A316B4860>": {
+        "wallet": 0,
+        "bank": 0
+    },
+    "<property object at 0x0000018F79F756D0>": {
+        "wallet": 0,
+        "bank": 0
+    },
+    "810396304780951592": {
+        "wallet": 1000,
+        "bank": 10000
+    },
+    "434586453088141312": {
+        "wallet": 300,
+        "bank": 80000000
+    }
+}

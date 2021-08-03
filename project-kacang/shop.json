@@ -1,0 +1,38 @@
+{
+    "makanan": [
+        {
+            "id": "001",
+            "name": "nasi",
+            "stock": 100,
+            "price": 1000,
+            "description": "Makanan utama untuk memulihkan staminamu!",
+            "disc": 0
+        },
+        {
+            "id": "002",
+            "name": "ayam",
+            "stock": 100,
+            "price": 2000,
+            "description": "Ayam KaEpCi kesukaan klean semua!",
+            "disc": 0
+        }
+    ],
+    "minuman": [
+        {
+            "id": "001",
+            "name": "air",
+            "stock": 100,
+            "price": 10000,
+            "description": "Air Mineral",
+            "disc": 0
+        },
+        {
+            "id": "002",
+            "name": "teh",
+            "stock": 100,
+            "price": 10,
+            "description": "Teh Biasa",
+            "disc": 0
+        }
+    ]
+}

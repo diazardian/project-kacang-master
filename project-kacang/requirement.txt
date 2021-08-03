@@ -1,0 +1,5 @@
+discord.py==1.6.0
+mysql-connector-python==8.0.23
+pillow
+python-barcode
+requests

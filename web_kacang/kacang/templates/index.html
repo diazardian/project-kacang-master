@@ -1,0 +1,21 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<section class="homescreen m-0 flex flex-col w-screen justify-center bg-gray-800 h-screen text-gray-100 ">
+  <nav>
+    <ul class="flex justify-between text-xl py-8 px-8 md:px-48 ">
+      <li>
+        {{ logo }}
+      </li>
+      <li>
+        <a href="https://github.com/diazardian" target="_blank" rel="noopener noreferrer">{{ author }}</a>
+      </li>
+    </ul>
+  </nav>
+
+  <h1 class="font-semibold text-6xl my-auto mx-auto md:mx-48 ">
+    Dashboard <br/>
+    <span class="text-teal-400">Bot Kacang.</span>
+  </h1>
+</section>
+{% endblock content %}
