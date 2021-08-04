@@ -509,4 +509,4 @@ async def suara(ctx, channel: discord.TextChannel, *, content:str):
     data = discord.File(f'audio/{user}.mp3')
     await channel.send(file=data)
 
-client.run("ODI1MzY4ODkwOTc2NTAxODEw.YF86rg.2NxDqgdt0iYryHJ1ah5l-fNplT4")
+client.run("")
