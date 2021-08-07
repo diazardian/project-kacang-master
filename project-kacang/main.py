@@ -1,4 +1,5 @@
 import discord
+from discord import colour
 from discord.ext import commands
 from disputils import BotEmbedPaginator, BotConfirmation, BotMultipleChoice
 import json
@@ -14,21 +15,28 @@ from barcode import EAN13
 from barcode.writer import ImageWriter
 from urllib import request
 from gtts import gTTS
-import db
+import logging
+
+logger = logging.getLogger("discord")
+logger.setLevel(logging.DEBUG)
+handler = logging.FileHandler(filename="discord.log", encoding="utf-8", mode="w")
+handler.setFormatter(
+    logging.Formatter("%(asctime)s:%(levelname)s:%(name)s: %(message)s")
+)
+logger.addHandler(handler)
 
 # os.chdir("E:\\DIaz\\WORK\\BOT\\project-kacang-master\\project-kacang")
 # os.chdir("/Users/laboratoriumaudit2/Public/Diaz/project-kacang")
 
 client = commands.Bot(command_prefix="..")
 
-print(db)
 
-@client.command(help='Dev ONLY!')
+@client.command(help="Dev ONLY!")
 async def load(ctx, extension):
     client.load_extension(f"cogs.{extension}")
 
 
-@client.command(help='Dev Only!')
+@client.command(help="Dev Only!")
 async def unload(ctx, extension):
     client.unload_extension(f"cogs.{extension}")
 
@@ -41,6 +49,26 @@ for filename in os.listdir("./cogs"):
 @client.command()
 async def ping(ctx):
     await ctx.send(f"Pong! {client.latency}")
+
+
+@client.command()
+async def cmd(ctx):
+    channel = discord.utils.get(guild.text_channels, name="help", topic="help channel")
+    # channel = discord.TextChannel
+    await ctx.send(f"Here's your mentioned channel ID: {channel}")
+
+
+@client.command()
+async def test(ctx):
+    param_id = str(ctx.guild.owner_id)
+    URL = f"http://127.0.0.1:8000/api/DiscordMember/{param_id}/"
+    data = requests.get(url=URL).json()
+    if data["id_discord"] == str(ctx.author.id):
+        embed = discord.Embed(description="Pemilik Server!", color=discord.Color.blue())
+        await ctx.send(embed=embed)
+    else:
+        # guild_owner = client.get_user(ctx.guild.owner_id)
+        await ctx.send(f"Hey! {ctx.author.name}, kamu bukan pemilik server ini!")
 
 
 @client.command()
@@ -309,82 +337,100 @@ async def get_bank_data():
         users = json.load(bank)
     return users
 
+
 @client.command()
 async def bag(ctx):
     await open_bag(ctx.author)
     user = ctx.author
     users = await get_user_bag()
-    
 
-    em = discord.Embed(title = "Your Bag")
+    em = discord.Embed(title="Your Bag")
     for item in bag:
         name = item["name"]
         amount = item["amount"]
 
-        em.add_field(name = name, value = amount)    
+        em.add_field(name=name, value=amount)
 
-    await ctx.send(embed = em)
+    await ctx.send(embed=em)
 
-@client.command(name='pasar', help='Untuk melihat menu pasar')
+
+@client.command(name="pasar", help="Untuk melihat menu pasar")
 async def pasar(ctx, kategori=None, affirm=None):
     store_data = await get_store_data()
-    #check null value
+    # check null value
     idbarang = []
-    data = store_data['makanan'] + store_data['minuman']
+    data = store_data["makanan"] + store_data["minuman"]
     for i in data:
-        if i['name'] == affirm:
-            idbarang = [(i['id'])]
+        if i["name"] == affirm:
+            idbarang = [(i["id"])]
     if kategori is None and affirm is None:
         text = f"**{ctx.author.name}**, mohon pilih salah satu dari kategori dibawah\ndan ketik `..pasar [kategori]` untuk melihat item\n*- makanan : Makanan general*\n*- minuman : minuman menyegarkan*\n\n*tahap dev, belum bisa membeli!"
-        embed = discord.Embed(description = text, color = discord.Color.orange())
-        embed.set_author(name="Selamat Datang di Pasar Kacang ✨", icon_url=ctx.author.avatar_url)
+        embed = discord.Embed(description=text, color=discord.Color.orange())
+        embed.set_author(
+            name="Selamat Datang di Pasar Kacang ✨", icon_url=ctx.author.avatar_url
+        )
         await ctx.send(embed=embed)
-    if kategori == 'makanan':
-        data = store_data['makanan']
+    if kategori == "makanan":
+        data = store_data["makanan"]
         item = ""
         for i in data:
             item += f"- [{i['price']}] **{i['name']}** | Stock : **{i['stock']}** ({i['description']})\n"
         text = f"Membeli makanan untuk memulihkan energimu!\n**Usage**\nUntuk membeli ketik `pasar beli [nama item]`\n**Dagangan**\n{item}"
-        embed = discord.Embed(description = text, color = discord.Color.orange())
-        embed.set_author(name="Selamat Datang di Pasar Kacang ✨", icon_url=ctx.author.avatar_url)
+        embed = discord.Embed(description=text, color=discord.Color.orange())
+        embed.set_author(
+            name="Selamat Datang di Pasar Kacang ✨", icon_url=ctx.author.avatar_url
+        )
         await ctx.send(embed=embed)
-    if kategori == 'minuman':
-        data = store_data['minuman']
+    if kategori == "minuman":
+        data = store_data["minuman"]
         item = ""
         for i in data:
             item += f"- [{i['price']}] **{i['name']}** ({i['description']})\n"
         text = f"Membeli minuman untuk memulihkan energimu!\n**Usage**\nUntuk membeli ketik `pasar beli [nama item]`\n**Dagangan**\n{item}"
-        embed = discord.Embed(description = text, color = discord.Color.orange())
-        embed.set_author(name="Selamat Datang di Pasar Kacang ✨", icon_url=ctx.author.avatar_url)
+        embed = discord.Embed(description=text, color=discord.Color.orange())
+        embed.set_author(
+            name="Selamat Datang di Pasar Kacang ✨", icon_url=ctx.author.avatar_url
+        )
         await ctx.send(embed=embed)
-    
-    if kategori == 'beli' and len(idbarang) == 0:
-        text = f"tidak ada barang dengan kode atau nama **{affirm}**\nmohon cek kembali!"
-        embed = discord.Embed(description = text, color = discord.Color.red())
-        await ctx.send(embed = embed)
 
-    if kategori == 'beli' and affirm == affirm:
-        data = store_data['makanan'] + store_data['minuman']
+    if kategori == "beli" and len(idbarang) == 0:
+        text = (
+            f"tidak ada barang dengan kode atau nama **{affirm}**\nmohon cek kembali!"
+        )
+        embed = discord.Embed(description=text, color=discord.Color.red())
+        await ctx.send(embed=embed)
+
+    if kategori == "beli" and affirm == affirm:
+        data = store_data["makanan"] + store_data["minuman"]
         for i in data:
-            if i['name'] == affirm:
-                price = (i['price'])
+            if i["name"] == affirm:
+                price = i["price"]
         text = f"Apakah kamu ingin membeli **{affirm}** seharga **{price}**?"
-        embed = discord.Embed(title = 'Confirmation Dialog', description = text, color = discord.Color.orange())
-        msg = await ctx.channel.send(embed = embed)
-        react1 = await msg.add_reaction(u"\u2705")
-        react2 = await msg.add_reaction(u"\U0001F6AB")
+        embed = discord.Embed(
+            title="Confirmation Dialog", description=text, color=discord.Color.orange()
+        )
+        msg = await ctx.channel.send(embed=embed)
+        react1 = await msg.add_reaction("\u2705")
+        react2 = await msg.add_reaction("\U0001F6AB")
 
         try:
-            reaction, user = await client.wait_for("reaction_add", check=lambda reaction, user: user == ctx.author and reaction.emoji in [u"\u2705", u"\U0001F6AB"], timeout=30.0)
-
+            reaction, user = await client.wait_for(
+                "reaction_add",
+                check=lambda reaction, user: user == ctx.author
+                and reaction.emoji in ["\u2705", "\U0001F6AB"],
+                timeout=30.0,
+            )
 
         except asyncio.TimeoutError:
-            embed = discord.Embed(description = f"Membatalkan pembelian karena waktu habis", color = discord.Color.red())
-            await ctx.channel.send(embed = embed)
+            embed = discord.Embed(
+                description=f"Membatalkan pembelian karena waktu habis",
+                color=discord.Color.red(),
+            )
+            await ctx.channel.send(embed=embed)
             await msg.clear_reactions()
 
         else:
-            if reaction.emoji == u"\u2705":
+            if reaction.emoji == "\u2705":
                 await open_account(ctx.author)
                 bal = await update_bank(ctx.author)
                 amount = int(price)
@@ -398,13 +444,18 @@ async def pasar(ctx, kategori=None, affirm=None):
                     return
                 await update_bank(ctx.author, -1 * price)
                 await update_bank(ctx.author, price, "bank")
-                embed = discord.Embed(description = f"Kamu berhasil membeli **{affirm}**", color = discord.Color.green())
-                await msg.edit(embed = embed)
+                embed = discord.Embed(
+                    description=f"Kamu berhasil membeli **{affirm}**",
+                    color=discord.Color.green(),
+                )
+                await msg.edit(embed=embed)
                 await msg.clear_reactions()
 
             else:
-                embed = discord.Embed(description = f"Transaksi dibatalkan!", color = discord.Color.red())
-                await msg.edit(embed = embed)
+                embed = discord.Embed(
+                    description=f"Transaksi dibatalkan!", color=discord.Color.red()
+                )
+                await msg.edit(embed=embed)
                 await msg.clear_reactions()
 
 
@@ -412,6 +463,7 @@ async def get_store_data():
     with open("shop.json", "r") as shop:
         store = json.load(shop)
     return store
+
 
 @client.command()
 async def role(ctx):
@@ -443,6 +495,7 @@ async def get_user_data():
         profil = json.load(prof)
     return profil
 
+
 async def open_bag(user):
     bag = await get_user_bag()
 
@@ -457,10 +510,12 @@ async def open_bag(user):
         json.dump(bag, tas)
     return True
 
+
 async def get_user_bag():
     with open("bag.json", "r") as tas:
         bag = json.load(tas)
     return bag
+
 
 async def update_bank(user, change=0, mode="wallet"):
     users = await get_bank_data()
@@ -491,22 +546,27 @@ async def on_command_error(ctx, error):
         )
         await ctx.send(embed=embed)
 
+
 ##JOB
+
 
 @client.command()
 async def DM(ctx, user: discord.User, *, message=None):
     message = message or "Ignore this DM, it's just test dev for DM system!"
     await user.send(message)
 
-#Suara
 
-@client.command(name='suara', help='Test Untuk Voice Assistant')
+# Suara
+
+
+@client.command(name="suara", help="Test Untuk Voice Assistant")
 @commands.has_permissions(send_messages=True, manage_messages=True)
-async def suara(ctx, channel: discord.TextChannel, *, content:str):
+async def suara(ctx, channel: discord.TextChannel, *, content: str):
     user = ctx.author.name
-    tts = gTTS(f'{content}', lang='id')
-    tts.save(f'audio/{user}.mp3')
-    data = discord.File(f'audio/{user}.mp3')
+    tts = gTTS(f"{content}", lang="id")
+    tts.save(f"audio/{user}.mp3")
+    data = discord.File(f"audio/{user}.mp3")
     await channel.send(file=data)
 
-client.run("")
+
+client.run("ODI1MzY4ODkwOTc2NTAxODEw.YF86rg.flMGiRjn9aPnSpOgB6hQLRWQTZc")

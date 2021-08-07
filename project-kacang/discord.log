@@ -1,0 +1,1431 @@
+2021-08-06 22:56:08,446:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2021-08-06 22:56:08,456:DEBUG:discord.client: on_command_error has successfully been registered as an event
+2021-08-06 22:56:08,457:INFO:discord.client: logging in using static token
+2021-08-06 22:56:09,040:DEBUG:discord.http: GET https://discord.com/api/v7/users/@me with None has returned 200
+2021-08-06 22:56:09,041:DEBUG:discord.http: GET https://discord.com/api/v7/users/@me has received {'id': '825368890976501810', 'username': 'Project Kacang 1.0.0', 'avatar': 'ae518ba75b3a9f55c37d4618365f338f', 'discriminator': '4837', 'public_flags': 0, 'flags': 0, 'bot': True, 'banner': None, 'banner_color': None, 'accent_color': None, 'bio': '', 'locale': 'en-US', 'mfa_enabled': True, 'email': None, 'verified': True}
+2021-08-06 22:56:09,177:DEBUG:discord.http: GET https://discord.com/api/v7/gateway with None has returned 200
+2021-08-06 22:56:09,178:DEBUG:discord.http: GET https://discord.com/api/v7/gateway has received {'url': 'wss://gateway.discord.gg'}
+2021-08-06 22:56:09,674:DEBUG:discord.gateway: Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6&compress=zlib-stream
+2021-08-06 22:56:09,675:DEBUG:discord.client: Dispatching event socket_raw_receive
+2021-08-06 22:56:09,675:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 10, 'd': {'heartbeat_interval': 41250, '_trace': ['["gateway-prd-main-t52z",{"micros":0.0}]']}}
+2021-08-06 22:56:09,675:DEBUG:discord.client: Dispatching event socket_response
+2021-08-06 22:56:09,676:DEBUG:discord.client: Dispatching event socket_raw_send
+2021-08-06 22:56:09,677:DEBUG:discord.client: Dispatching event socket_raw_send
+2021-08-06 22:56:09,677:INFO:discord.gateway: Shard ID None has sent the IDENTIFY payload.
+2021-08-06 22:56:09,962:DEBUG:discord.client: Dispatching event socket_raw_receive
+2021-08-06 22:56:09,963:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2021-08-06 22:56:09,963:DEBUG:discord.client: Dispatching event socket_response
+2021-08-06 22:56:10,080:DEBUG:discord.client: Dispatching event socket_raw_receive
+2021-08-06 22:56:10,080:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'READY', 's': 1, 'op': 0, 'd': {'v': 6, 'user_settings': {}, 'user': {'verified': True, 'username': 'Project Kacang 1.0.0', 'mfa_enabled': True, 'id': '825368890976501810', 'flags': 0, 'email': None, 'discriminator': '4837', 'bot': True, 'avatar': 'ae518ba75b3a9f55c37d4618365f338f'}, 'session_id': '6bf96ab0fccce0df3fe882c2dccc0915', 'relationships': [], 'private_channels': [], 'presences': [], 'guilds': [{'unavailable': True, 'id': '809785532962832414'}, {'unavailable': True, 'id': '810098494517674005'}], 'guild_join_requests': [], 'geo_ordered_rtc_regions': ['singapore', 'hongkong', 'india', 'sydney', 'japan'], 'application': {'id': '825368890976501810', 'flags': 262144}, '_trace': ['["gateway-prd-main-t52z",{"micros":73196,"calls":["discord-sessions-green-prd-2-29",{"micros":71920,"calls":["start_session",{"micros":49009,"calls":["api-prd-main-pgf2",{"micros":45714,"calls":["get_user",{"micros":9230},"add_authorized_ip",{"micros":1200},"get_guilds",{"micros":3011},"coros_wait",{"micros":0}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":17495,"calls":[]}]}]}]']}}
+2021-08-06 22:56:10,080:DEBUG:discord.client: Dispatching event socket_response
+2021-08-06 22:56:10,080:INFO:discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-t52z",{"micros":73196,"calls":["discord-sessions-green-prd-2-29",{"micros":71920,"calls":["start_session",{"micros":49009,"calls":["api-prd-main-pgf2",{"micros":45714,"calls":["get_user",{"micros":9230},"add_authorized_ip",{"micros":1200},"get_guilds",{"micros":3011},"coros_wait",{"micros":0}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":17495,"calls":[]}]}]}] (Session ID: 6bf96ab0fccce0df3fe882c2dccc0915).
+2021-08-06 22:56:10,100:DEBUG:discord.client: Dispatching event connect
+2021-08-06 22:56:10,100:DEBUG:discord.client: Dispatching event socket_raw_receive
+2021-08-06 22:56:10,102:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'GUILD_CREATE', 's': 2, 'op': 0, 'd': {'mfa_level': 0, 'name': 'SEJUTA KACANG', 'application_command_counts': {'3': 0, '2': 0, '1': 102}, 'nsfw_level': 0, 'verification_level': 1, 'description': None, 'owner_id': '813983242532945970', 'nsfw': False, 'splash': None, 'features': ['THREE_DAY_THREAD_ARCHIVE', 'INVITE_SPLASH', 'ANIMATED_ICON'], 'discovery_splash': None, 'voice_states': [], 'stage_instances': [], 'vanity_url_code': None, 'presences': [], 'max_members': 100000, 'roles': [{'position': 0, 'permissions_new': '248138681921', 'permissions': 1178062401, 'name': '@everyone', 'mentionable': False, 'managed': False, 'id': '809785532962832414', 'hoist': False, 'color': 0}, {'tags': {'bot_id': '234395307759108106'}, 'position': 13, 'permissions_new': '4294967304', 'permissions': 8, 'name': 'Groovy', 'mentionable': False, 'managed': True, 'id': '809816220026142741', 'hoist': False, 'color': 0}, {'tags': {'bot_id': '306583221565521921'}, 'position': 14, 'permissions_new': '4563755073', 'permissions': 268787777, 'name': 'Wolfia', 'mentionable': False, 'managed': True, 'id': '810017567502106635', 'hoist': False, 'color': 0}, {'position': 27, 'permissions_new': '4294443007', 'permissions': 2146959359, 'name': 'Perdana Menteri', 'mentionable': True, 'managed': False, 'id': '810101702735953930', 'hoist': True, 'color': 746914}, {'position': 28, 'permissions_new': '8589410303', 'permissions': 2146959359, 'name': 'Presiden Server', 'mentionable': True, 'managed': False, 'id': '810102447514320957', 'hoist': True, 'color': 12013794}, {'position': 22, 'permissions_new': '7758937943', 'permissions': 1316486999, 'name': 'Menteri Keuangan', 'mentionable': True, 'managed': False, 'id': '810103311495725087', 'hoist': True, 'color': 15844367}, {'tags': {'bot_id': '500658624109084682'}, 'position': 16, 'permissions_new': '5369023488', 'permissions': 1074056192, 'name': 'Emoji.gg Bot', 'mentionable': False, 'managed': True, 'id': '810109527882072085', 'hoist': False, 'color': 0}, {'position': 17, 'permissions_new': '7620513345', 'permissions': 1178062401, 'name': 'Music', 'mentionable': False, 'managed': False, 'id': '810114761584148512', 'hoist': False, 'color': 10277920}, {'position': 20, 'permissions_new': '7620513345', 'permissions': 1178062401, 'name': 'Rakyat Jelata', 'mentionable': True, 'managed': False, 'id': '810119079016661044', 'hoist': True, 'color': 11027200}, {'position': 18, 'permissions_new': '7620513345', 'permissions': 1178062401, 'name': 'BOTS', 'mentionable': False, 'managed': False, 'id': '810119987078889524', 'hoist': True, 'color': 905165}, {'position': 19, 'permissions_new': '8304197631', 'permissions': 1861746687, 'name': 'Moderator', 'mentionable': False, 'managed': False, 'id': '810139549552476170', 'hoist': True, 'color': 15277667}, {'tags': {'bot_id': '276060004262477825'}, 'position': 15, 'permissions_new': '5905050743', 'permissions': 1610083447, 'name': 'Koya', 'mentionable': False, 'managed': True, 'id': '810166510634663968', 'hoist': False, 'color': 0}, {'tags': {'bot_id': '484395597508509697'}, 'position': 12, 'permissions_new': '4698143953', 'permissions': 403176657, 'name': 'Points', 'mentionable': False, 'managed': True, 'id': '810174594190540891', 'hoist': False, 'color': 0}, {'position': 25, 'permissions_new': '6550978369', 'permissions': 108527425, 'name': 'Rakyat Tajir Melintir', 'mentionable': False, 'managed': False, 'id': '810394967935418394', 'hoist': True, 'color': 3066993}, {'tags': {'bot_id': '159985870458322944'}, 'position': 11, 'permissions_new': '6211234911', 'permissions': 1916267615, 'name': 'MEE6', 'mentionable': False, 'managed': True, 'id': '810407512418287658', 'hoist': False, 'color': 0}, {'position': 23, 'permissions_new': '7620521537', 'permissions': 1178070593, 'name': 'Orang Kaya Baru', 'mentionable': False, 'managed': False, 'id': '811265120055066665', 'hoist': True, 'color': 15105570}, {'position': 21, 'permissions_new': '3459776071', 'permissions': 1312292423, 'name': 'Menteri Sosial', 'mentionable': False, 'managed': False, 'id': '811273269381693493', 'hoist': True, 'color': 14745855}, {'tags': {'bot_id': '508759831755096074'}, 'position': 10, 'permissions_new': '4298402880', 'permissions': 3435584, 'name': 'K-pop Music Quiz Bot', 'mentionable': False, 'managed': True, 'id': '811534570876567564', 'hoist': False, 'color': 0}, {'tags': {'bot_id': '765207869032366090'}, 'position': 9, 'permissions_new': '4294967304', 'permissions': 8, 'name': 'Announce', 'mentionable': False, 'managed': True, 'id': '811607356253274173', 'hoist': False, 'color': 0}, {'tags': {'bot_id': '590047618479030272'}, 'position': 8, 'permissions_new': '4332059728', 'permissions': 37092432, 'name': 'Alita', 'mentionable': False, 'managed': True, 'id': '813955210580983850', 'hoist': False, 'color': 0}, {'position': 26, 'permissions_new': '7649886017', 'permissions': 1207435073, 'name': 'Dewan Penasehat', 'mentionable': True, 'managed': False, 'id': '815200368874487858', 'hoist': True, 'color': 11344667}, {'tags': {'bot_id': '294882584201003009'}, 'position': 7, 'permissions_new': '347200', 'permissions': 347200, 'name': 'GiveawayBot', 'mentionable': False, 'managed': True, 'id': '817285544983789578', 'hoist': False, 'color': 0}, {'tags': {'bot_id': '791100707629432863'}, 'position': 6, 'permissions_new': '388160', 'permissions': 388160, 'name': 'Zephyr', 'mentionable': False, 'managed': True, 'id': '823123363136012329', 'hoist': False, 'color': 0}, {'tags': {'bot_id': '458276816071950337'}, 'position': 5, 'permissions_new': '1100824', 'permissions': 1100824, 'name': 'ServerStats', 'mentionable': False, 'managed': True, 'id': '824944817891967007', 'hoist': False, 'color': 0}, {'position': 24, 'permissions_new': '7784103895', 'permissions': 1341652951, 'name': 'Pensiunan Kacang', 'mentionable': True, 'managed': False, 'id': '824963135886065724', 'hoist': True, 'color': 6073312}, {'tags': {'bot_id': '825368890976501810'}, 'position': 4, 'permissions_new': '8', 'permissions': 8, 'name': 'Project Kacang 1.0.0', 'mentionable': False, 'managed': True, 'id': '825369712203923458', 'hoist': False, 'color': 0}, {'tags': {'premium_subscriber': None}, 'position': 3, 'permissions_new': '110699728449', 'permissions': 1178062401, 'name': 'Server Booster', 'mentionable': False, 'managed': True, 'id': '852947966767530024', 'hoist': False, 'color': 16023551}, {'tags': {'bot_id': '814406731827642408'}, 'position': 2, 'permissions_new': '388160', 'permissions': 388160, 'name': 'vita', 'mentionable': False, 'managed': True, 'id': '857510391499718656', 'hoist': False, 'color': 0}, {'tags': {'bot_id': '408785106942164992'}, 'position': 1, 'permissions_new': '1074120768', 'permissions': 1074120768, 'name': 'OwO', 'mentionable': False, 'managed': True, 'id': '870907982202949632', 'hoist': False, 'color': 0}], 'joined_at': '2021-03-27T14:04:34.072830+00:00', 'icon': 'f387a534655fe347a2e0a9c2bd407df9', 'emojis': [{'roles': [], 'require_colons': True, 'name': 'lisawink', 'managed': False, 'id': '810111336448917524', 'available': True, 'animated': False}, {'roles': [], 'require_colons': True, 'name': '2689_bunclapping', 'managed': False, 'id': '819212413462642719', 'available': True, 'animated': True}, {'roles': [], 'require_colons': True, 'name': 'DiCaprioLaugh', 'managed': False, 'id': '819212625556406283', 'available': True, 'animated': False}, {'roles': [], 'require_colons': True, 'name': 'jerrywheeze', 'managed': False, 'id': '819212833036304455', 'available': True, 'animated': False}, {'roles': [], 'require_colons': True, 'name': 'ghostboo', 'managed': False, 'id': '819213191128154193', 'available': True, 'animated': True}, {'roles': [], 'require_colons': True, 'name': 'emoji_6', 'managed': False, 'id': '854364178621136947', 'available': True, 'animated': False}, {'roles': [], 'require_colons': True, 'name': 'meong_love', 'managed': False, 'id': '855802351406415872', 'available': True, 'animated': True}, {'roles': [], 'require_colons': True, 'name': 'meong_lol', 'managed': False, 'id': '855802521285427250', 'available': True, 'animated': True}, {'roles': [], 'require_colons': True, 'name': 'meong_cry', 'managed': False, 'id': '855802700826411029', 'available': True, 'animated': True}, {'roles': [], 'require_colons': True, 'name': 'mariodance', 'managed': False, 'id': '855803175122894848', 'available': True, 'animated': True}, {'roles': [], 'require_colons': True, 'name': 'pepe_runcry', 'managed': False, 'id': '855803376556834826', 'available': True, 'animated': True}, {'roles': [], 'require_colons': True, 'name': 'meong_drink', 'managed': False, 'id': '855803659857559553', 'available': True, 'animated': True}, {'roles': [], 'require_colons': True, 'name': 'meong_cute', 'managed': False, 'id': '855803704422826025', 'available': True, 'animated': True}, {'roles': [], 'require_colons': True, 'name': 'gg', 'managed': False, 'id': '855803787904942083', 'available': True, 'animated': True}, {'roles': [], 'require_colons': True, 'name': 'meong_dance', 'managed': False, 'id': '855803828241694751', 'available': True, 'animated': True}, {'roles': [], 'require_colons': True, 'name': 'meong_facetable', 'managed': False, 'id': '855803885855047720', 'available': True, 'animated': True}, {'roles': [], 'require_colons': True, 'name': 'pepe_no', 'managed': False, 'id': '855805650515918878', 'available': True, 'animated': False}, {'roles': [], 'require_colons': True, 'name': 'pepe_enter', 'managed': False, 'id': '855805879273259069', 'available': True, 'animated': True}, {'roles': [], 'require_colons': True, 'name': 'pepe_juicespin', 'managed': False, 'id': '855805940066418718', 'available': True, 'animated': True}, {'roles': [], 'require_colons': True, 'name': 'pepecute', 'managed': False, 'id': '855805979912568843', 'available': True, 'animated': False}, {'roles': [], 'require_colons': True, 'name': 'meong_cool', 'managed': False, 'id': '855806089525854218', 'available': True, 'animated': True}, {'roles': [], 'require_colons': True, 'name': 'thinking', 'managed': False, 'id': '855808422259326996', 'available': True, 'animated': True}, {'roles': [], 'require_colons': True, 'name': 'sad', 'managed': False, 'id': '856039677660626966', 'available': True, 'animated': False}, {'roles': [], 'require_colons': True, 'name': 'cute', 'managed': False, 'id': '856039715253256192', 'available': True, 'animated': False}, {'roles': [], 'require_colons': True, 'name': 'what', 'managed': False, 'id': '856039751143784488', 'available': True, 'animated': False}, {'roles': [], 'require_colons': True, 'name': 'pepe_wtf', 'managed': False, 'id': '856039782206799903', 'available': True, 'animated': False}, {'roles': [], 'require_colons': True, 'name': 'smile', 'managed': False, 'id': '856039816248819762', 'available': True, 'animated': False}, {'roles': [], 'require_colons': True, 'name': 'omg', 'managed': False, 'id': '856039848645492738', 'available': True, 'animated': False}, {'roles': [], 'require_colons': True, 'name': 'cat_approves', 'managed': False, 'id': '856040662452142129', 'available': True, 'animated': False}, {'roles': [], 'require_colons': True, 'name': 'sadge_pray', 'managed': False, 'id': '856040709459017728', 'available': True, 'animated': False}, {'roles': [], 'require_colons': True, 'name': 'pepecryhands', 'managed': False, 'id': '856040746675470368', 'available': True, 'animated': False}, {'roles': [], 'require_colons': True, 'name': 'cry', 'managed': False, 'id': '856365586703450122', 'available': True, 'animated': False}, {'roles': [], 'require_colons': True, 'name': 'pepe_pls', 'managed': False, 'id': '856365811052707872', 'available': True, 'animated': False}, {'roles': [], 'require_colons': True, 'name': 'jerrycry', 'managed': False, 'id': '856365910520889354', 'available': True, 'animated': False}, {'roles': [], 'require_colons': True, 'name': 'badlydrawnsmile', 'managed': False, 'id': '856366074538622987', 'available': True, 'animated': False}, {'roles': [], 'require_colons': True, 'name': 'angry', 'managed': False, 'id': '856366291425689631', 'available': True, 'animated': False}, {'roles': [], 'require_colons': True, 'name': 'kek', 'managed': False, 'id': '858287707830091776', 'available': True, 'animated': False}, {'roles': [], 'require_colons': True, 'name': 'wuw', 'managed': False, 'id': '858504107420680193', 'available': True, 'animated': True}, {'roles': [], 'require_colons': True, 'name': 'dih', 'managed': False, 'id': '858504393116876812', 'available': True, 'animated': True}], 'application_command_count': 102, 'default_message_notifications': 0, 'lazy': True, 'afk_timeout': 300, 'rules_channel_id': None, 'system_channel_id': '810103857144791061', 'application_id': None, 'afk_channel_id': None, 'preferred_locale': 'en-US', 'large': False, 'members': [{'user': {'username': 'Project Kacang 1.0.0', 'id': '825368890976501810', 'discriminator': '4837', 'bot': True, 'avatar': 'ae518ba75b3a9f55c37d4618365f338f'}, 'roles': ['825369712203923458', '810119987078889524'], 'premium_since': None, 'pending': False, 'nick': None, 'mute': False, 'joined_at': '2021-03-27T14:04:34.072830+00:00', 'is_pending': False, 'hoisted_role': '810119987078889524', 'deaf': False, 'avatar': None}], 'threads': [], 'premium_tier': 1, 'channels': [{'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 4, 'permission_overwrites': [{'type': 'member', 'id': '484395597508509697', 'deny_new': '0', 'deny': 0, 'allow_new': '2147871808', 'allow': 388160}, {'type': 'role', 'id': '809785532962832414', 'deny_new': '1024', 'deny': 1024, 'allow_new': '0', 'allow': 0}, {'type': 'member', 'id': '810396304780951592', 'deny_new': '0', 'deny': 0, 'allow_new': '1024', 'allow': 1024}, {'type': 'member', 'id': '825368890976501810', 'deny_new': '0', 'deny': 0, 'allow_new': '1024', 'allow': 1024}], 'parent_id': None, 'nsfw': False, 'name': '🚦dev-kacang-1', 'last_pin_timestamp': '2021-08-06T15:38:48+00:00', 'last_message_id': '873232343480021042', 'id': '825639436419203094'}, {'type': 0, 'topic': 'Use only fredboat command!', 'rate_limit_per_user': 15, 'position': 39, 'permission_overwrites': [{'type': 'role', 'id': '809816220026142741', 'deny_new': '3088', 'deny': 3088, 'allow_new': '0', 'allow': 0}], 'parent_id': '810108212509671435', 'nsfw': False, 'name': '🎶fredboat-request-bar', 'last_message_id': '871967824833294407', 'id': '871568943553335346'}, {'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 21, 'permission_overwrites': [{'type': 'role', 'id': '809785532962832414', 'deny_new': '2953850897', 'deny': 806367249, 'allow_new': '511040', 'allow': 511040}, {'type': 'role', 'id': '811534570876567564', 'deny_new': '1024', 'deny': 1024, 'allow_new': '0', 'allow': 0}], 'parent_id': '811628285875585024', 'nsfw': False, 'name': '💸hyejookasino', 'last_message_id': '872442011851055134', 'id': '814534567137378354'}, {'user_limit': 0, 'type': 2, 'rtc_region': None, 'position': 1, 'permission_overwrites': [{'type': 'member', 'id': '458276816071950337', 'deny_new': '0', 'deny': 0, 'allow_new': '1068048', 'allow': 1068048}, {'type': 'role', 'id': '809785532962832414', 'deny_new': '1050624', 'deny': 1050624, 'allow_new': '1024', 'allow': 1024}], 'parent_id': '824945299771621376', 'nsfw': False, 'name': 'Members: 87', 'id': '824945305959006228', 'bitrate': 64000}, {'type': 4, 'position': 1, 'permission_overwrites': [{'type': 'member', 'id': '458276816071950337', 'deny_new': '0', 'deny': 0, 'allow_new': '1068048', 'allow': 1068048}, {'type': 'role', 'id': '809785532962832414', 'deny_new': '1050624', 'deny': 1050624, 'allow_new': '1024', 'allow': 1024}], 'parent_id': None, 'nsfw': False, 'name': '📊 SERVER STATS 📊', 'id': '824945299771621376'}, {'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 14, 'permission_overwrites': [{'type': 'role', 'id': '809785532962832414', 'deny_new': '2954033168', 'deny': 806549520, 'allow_new': '328768', 'allow': 328768}], 'parent_id': '811628285875585024', 'nsfw': False, 'name': '⚙hyejoo-changelog', 'last_message_id': '868420616590589964', 'id': '818458932988215307'}, {'user_limit': 0, 'type': 2, 'rtc_region': None, 'position': 2, 'permission_overwrites': [{'type': 'member', 'id': '458276816071950337', 'deny_new': '0', 'deny': 0, 'allow_new': '1068048', 'allow': 1068048}, {'type': 'role', 'id': '809785532962832414', 'deny_new': '1050624', 'deny': 1050624, 'allow_new': '1024', 'allow': 1024}], 'parent_id': '824945299771621376', 'nsfw': False, 'name': 'Bots: 17', 'id': '824945309053878312', 'bitrate': 64000}, {'type': 4, 'position': 8, 'permission_overwrites': [], 'parent_id': None, 'nsfw': False, 'name': '😾 OWO GAME', 'id': '870913631653605377'}, {'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 41, 'permission_overwrites': [{'type': 'member', 'id': '159985870458322944', 'deny_new': '0', 'deny': 0, 'allow_new': '1024', 'allow': 1024}, {'type': 'role', 'id': '809785532962832414', 'deny_new': '1024', 'deny': 1024, 'allow_new': '0', 'allow': 0}], 'parent_id': '810108212509671435', 'nsfw': False, 'name': 'mee6-music', 'last_message_id': '811567122697682955', 'id': '811552781885243422'}, {'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 9, 'permission_overwrites': [], 'parent_id': '810108337441341470', 'nsfw': False, 'name': '📢announcement', 'last_message_id': None, 'id': '871574354897535016'}, {'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 33, 'permission_overwrites': [], 'parent_id': '870913631653605377', 'nsfw': False, 'name': '🐼owohelp', 'last_message_id': '871409556603957248', 'id': '870914711582023691'}, {'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 30, 'permission_overwrites': [{'type': 'role', 'id': '809785532962832414', 'deny_new': '805367825', 'deny': 805367825, 'allow_new': '2147944512', 'allow': 460864}, {'type': 'role', 'id': '810114761584148512', 'deny_new': '2952809488', 'deny': 805325840, 'allow_new': '0', 'allow': 0}, {'type': 'role', 'id': '813955210580983850', 'deny_new': '536870929', 'deny': 536870929, 'allow_new': '2416442432', 'allow': 268958784}], 'parent_id': '812453018057834526', 'nsfw': False, 'name': '🎱alita-mini-bar', 'last_message_id': '855087788658786325', 'id': '812454804970405899'}, {'type': 4, 'position': 9, 'permission_overwrites': [], 'parent_id': None, 'nsfw': False, 'name': '🎮 CHILL AND GAME', 'id': '809785533442162748'}, {'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 37, 'permission_overwrites': [], 'parent_id': '810108594489262112', 'nsfw': False, 'name': '🎬bioskop-kacang-chat', 'last_message_id': '872003386340409364', 'id': '841151776564051968'}, {'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 34, 'permission_overwrites': [], 'parent_id': '870913631653605377', 'nsfw': False, 'name': '🐼owobar', 'last_message_id': '871901989603250206', 'id': '870915269512544267'}, {'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 1, 'permission_overwrites': [{'type': 'role', 'id': '809785532962832414', 'deny_new': '805763153', 'deny': 805763153, 'allow_new': '66560', 'allow': 66560}], 'parent_id': None, 'nsfw': False, 'name': '👋goodbye', 'last_message_id': '864391577752567828', 'id': '810167766665265172'}, {'type': 4, 'position': 12, 'permission_overwrites': [], 'parent_id': None, 'nsfw': False, 'name': '✨ KACANG TALKTIVE', 'id': '809785533442162749'}, {'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 26, 'permission_overwrites': [{'type': 'role', 'id': '809785532962832414', 'deny_new': '2952835089', 'deny': 805351441, 'allow_new': '478272', 'allow': 478272}, {'type': 'role', 'id': '810119987078889524', 'deny_new': '2953312337', 'deny': 805828689, 'allow_new': '1024', 'allow': 1024}, {'type': 'role', 'id': '823123363136012329', 'deny_new': '0', 'deny': 0, 'allow_new': '2148006976', 'allow': 523328}, {'type': 'member', 'id': '825368890976501810', 'deny_new': '52240', 'deny': 52240, 'allow_new': '0', 'allow': 0}], 'parent_id': '823123520623214603', 'nsfw': False, 'name': '🎪zephybar', 'last_message_id': '857567527562510336', 'id': '823123721409134602'}, {'type': 4, 'position': 0, 'permission_overwrites': [{'type': 'member', 'id': '733035786664149104', 'deny_new': '0', 'deny': 0, 'allow_new': '1049600', 'allow': 1049600}, {'type': 'role', 'id': '809785532962832414', 'deny_new': '1049600', 'deny': 1049600, 'allow_new': '0', 'allow': 0}, {'type': 'role', 'id': '810103311495725087', 'deny_new': '0', 'deny': 0, 'allow_new': '1049600', 'allow': 1049600}, {'type': 'role', 'id': '824963135886065724', 'deny_new': '0', 'deny': 0, 'allow_new': '1049600', 'allow': 1049600}, {'type': 'role', 'id': '810119987078889524', 'deny_new': '0', 'deny': 0, 'allow_new': '1049600', 'allow': 1049600}], 'parent_id': None, 'nsfw': False, 'name': '☃ VIP ROOM', 'id': '871587452136063026'}, {'type': 0, 'topic': 'Channel Giveaway Hosted by Petinggi Istana\nSyarat : - Hanya boleh menggunakan 1 akun pribadinya. (Melanggar, banned dari kehidupan)\n\nCara ikut : - Hanya perlu klik terompet\n\n*Interval waktu giveaway hanya dalam 1 - 5 menit.\n\na.n Presiden kacang', 'rate_limit_per_user': 0, 'position': 12, 'permission_overwrites': [{'type': 'role', 'id': '809785532962832414', 'deny_new': '2953246737', 'deny': 805763089, 'allow_new': '66624', 'allow': 66624}, {'type': 'role', 'id': '817285544983789578', 'deny_new': '0', 'deny': 0, 'allow_new': '2953313361', 'allow': 805829713}], 'parent_id': '810108337441341470', 'nsfw': False, 'name': '💗giveawaykacang', 'last_message_id': '841309884313763880', 'id': '817287168354811934'}, {'type': 4, 'position': 4, 'permission_overwrites': [{'type': 'role', 'id': '809785532962832414', 'deny_new': '1049600', 'deny': 1049600, 'allow_new': '0', 'allow': 0}, {'type': 'role', 'id': '857510391499718656', 'deny_new': '0', 'deny': 0, 'allow_new': '1049600', 'allow': 1049600}], 'parent_id': None, 'nsfw': False, 'name': '🃏 VITA CARD KPOP COLLECTION', 'id': '857511078879166484'}, {'type': 0, 'topic': None, 'rate_limit_per_user': 15, 'position': 40, 'permission_overwrites': [{'type': 'role', 'id': '809816220026142741', 'deny_new': '0', 'deny': 0, 'allow_new': '0', 'allow': 0}], 'parent_id': '810108212509671435', 'nsfw': False, 'name': '🎶music-lyrics-bar', 'last_message_id': None, 'id': '871615888393129995'}, {'type': 0, 'topic': 'Tempat dimana kalian bisa jual beli kartu kalian dengan member lain!', 'rate_limit_per_user': 0, 'position': 19, 'permission_overwrites': [{'type': 'member', 'id': '733035786664149104', 'deny_new': '0', 'deny': 0, 'allow_new': '2953313361', 'allow': 805829713}, {'type': 'role', 'id': '809785532962832414', 'deny_new': '2952851473', 'deny': 805367825, 'allow_new': '461888', 'allow': 461888}, {'type': 'role', 'id': '811534570876567564', 'deny_new': '1024', 'deny': 1024, 'allow_new': '0', 'allow': 0}, {'type': 'role', 'id': '813955210580983850', 'deny_new': '2953313361', 'deny': 805829713, 'allow_new': '0', 'allow': 0}], 'parent_id': '811628285875585024', 'nsfw': False, 'name': '💹market-store-1', 'last_message_id': '871614958314606593', 'id': '811740481205698560'}, {'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 27, 'permission_overwrites': [{'type': 'member', 'id': '508759831755096074', 'deny_new': '2952925201', 'deny': 805441553, 'allow_new': '388160', 'allow': 388160}, {'type': 'role', 'id': '809785532962832414', 'deny_new': '2953246801', 'deny': 805763153, 'allow_new': '66560', 'allow': 66560}], 'parent_id': '812455787930714203', 'nsfw': False, 'name': '🎹-how-to-play', 'last_message_id': '812461909709946881', 'id': '812456849969381387'}, {'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 5, 'permission_overwrites': [{'type': 'member', 'id': '733035786664149104', 'deny_new': '0', 'deny': 0, 'allow_new': '1049600', 'allow': 1049600}, {'type': 'role', 'id': '809785532962832414', 'deny_new': '1049600', 'deny': 1049600, 'allow_new': '0', 'allow': 0}, {'type': 'role', 'id': '810103311495725087', 'deny_new': '0', 'deny': 0, 'allow_new': '1049600', 'allow': 1049600}, {'type': 'role', 'id': '810119987078889524', 'deny_new': '0', 'deny': 0, 'allow_new': '1049600', 'allow': 1049600}, {'type': 'role', 'id': '824963135886065724', 'deny_new': '0', 'deny': 0, 'allow_new': '1049600', 'allow': 1049600}], 'parent_id': '871587452136063026', 'nsfw': False, 'name': '💻meetingbar', 'last_pin_timestamp': '2021-03-27T14:14:53+00:00', 'last_message_id': '872860451501932545', 'id': '810112597000716328'}, {'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 13, 'permission_overwrites': [{'type': 'role', 'id': '809785532962832414', 'deny_new': '2953246737', 'deny': 805763089, 'allow_new': '65600', 'allow': 65600}], 'parent_id': '811628285875585024', 'nsfw': False, 'name': '🃏how-to-play', 'last_message_id': '813730445069123614', 'id': '811733822772346900'}, {'type': 0, 'topic': 'Bagaimana cara menggunakan bot ini!', 'rate_limit_per_user': 0, 'position': 29, 'permission_overwrites': [{'type': 'role', 'id': '809785532962832414', 'deny_new': '2953246801', 'deny': 805763153, 'allow_new': '66560', 'allow': 66560}], 'parent_id': '812453018057834526', 'nsfw': False, 'name': '🎮how-to-play', 'last_message_id': '812454118127435817', 'id': '812453228116705351'}, {'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 15, 'permission_overwrites': [{'type': 'role', 'id': '809785532962832414', 'deny_new': '444416', 'deny': 444416, 'allow_new': '0', 'allow': 0}], 'parent_id': '811628285875585024', 'nsfw': False, 'name': '📢announcement', 'last_message_id': '868433949431562304', 'id': '811755805832642571'}, {'user_limit': 0, 'type': 2, 'rtc_region': None, 'position': 12, 'permission_overwrites': [], 'parent_id': '810108212509671435', 'nsfw': False, 'name': '📻 Fredboat Radio Bar', 'id': '841167233031340063', 'bitrate': 64000}, {'user_limit': 0, 'type': 2, 'rtc_region': None, 'position': 8, 'permission_overwrites': [], 'parent_id': '809785533442162748', 'nsfw': False, 'name': '🎧 MINECRAFT', 'id': '841165303706025985', 'bitrate': 64000}, {'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 23, 'permission_overwrites': [{'type': 'role', 'id': '809785532962832414', 'deny_new': '806367249', 'deny': 806367249, 'allow_new': '511040', 'allow': 511040}, {'type': 'role', 'id': '857510391499718656', 'deny_new': '0', 'deny': 0, 'allow_new': '1049600', 'allow': 1049600}], 'parent_id': '857511078879166484', 'nsfw': False, 'name': '🎪vitabar', 'last_message_id': '871274463008804874', 'id': '857511000021401600'}, {'type': 4, 'position': 5, 'permission_overwrites': [], 'parent_id': None, 'nsfw': False, 'name': '🃏 ZEPHYR CARD KPOP COLLECTION', 'id': '823123520623214603'}, {'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 10, 'permission_overwrites': [{'type': 'member', 'id': '733035786664149104', 'deny_new': '2953313361', 'deny': 805829713, 'allow_new': '0', 'allow': 0}, {'type': 'member', 'id': '765207869032366090', 'deny_new': '805309456', 'deny': 805309456, 'allow_new': '0', 'allow': 0}, {'type': 'role', 'id': '809785532962832414', 'deny_new': '805314576', 'deny': 805314576, 'allow_new': '515137', 'allow': 515137}, {'type': 'role', 'id': '809816220026142741', 'deny_new': '1024', 'deny': 1024, 'allow_new': '0', 'allow': 0}, {'type': 'role', 'id': '810017567502106635', 'deny_new': '2953313361', 'deny': 805829713, 'allow_new': '0', 'allow': 0}, {'type': 'role', 'id': '810114761584148512', 'deny_new': '805828689', 'deny': 805828689, 'allow_new': '1024', 'allow': 1024}, {'type': 'role', 'id': '811534570876567564', 'deny_new': '1024', 'deny': 1024, 'allow_new': '0', 'allow': 0}, {'type': 'role', 'id': '811607356253274173', 'deny_new': '0', 'deny': 0, 'allow_new': '0', 'allow': 0}, {'type': 'role', 'id': '813955210580983850', 'deny_new': '805829713', 'deny': 805829713, 'allow_new': '0', 'allow': 0}, {'type': 'role', 'id': '823123363136012329', 'deny_new': '1024', 'deny': 1024, 'allow_new': '0', 'allow': 0}, {'type': 'role', 'id': '825369712203923458', 'deny_new': '3072', 'deny': 3072, 'allow_new': '0', 'allow': 0}, {'type': 'role', 'id': '870907982202949632', 'deny_new': '1024', 'deny': 1024, 'allow_new': '0', 'allow': 0}], 'parent_id': '810108337441341470', 'nsfw': False, 'name': '⛄kacangbar', 'last_pin_timestamp': '2021-02-17T14:44:23+00:00', 'last_message_id': '873226280496148501', 'id': '809785533442162750'}, {'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 31, 'permission_overwrites': [], 'parent_id': '870913631653605377', 'nsfw': False, 'name': '📢announcements', 'last_message_id': '872625261852626947', 'id': '870914064593866833'}, {'type': 4, 'position': 3, 'permission_overwrites': [{'type': 'role', 'id': '809785532962832414', 'deny_new': '1049600', 'deny': 1049600, 'allow_new': '0', 'allow': 0}], 'parent_id': None, 'nsfw': False, 'name': '🃏 HYEJOO CARD KPOP COLLECTION', 'id': '811628285875585024'}, {'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 3, 'permission_overwrites': [{'type': 'member', 'id': '500658624109084682', 'deny_new': '0', 'deny': 0, 'allow_new': '1024', 'allow': 1024}, {'type': 'member', 'id': '508759831755096074', 'deny_new': '0', 'deny': 0, 'allow_new': '1024', 'allow': 1024}, {'type': 'member', 'id': '733035786664149104', 'deny_new': '0', 'deny': 0, 'allow_new': '1024', 'allow': 1024}, {'type': 'role', 'id': '809785532962832414', 'deny_new': '1024', 'deny': 1024, 'allow_new': '0', 'allow': 0}, {'type': 'role', 'id': '810103311495725087', 'deny_new': '0', 'deny': 0, 'allow_new': '1024', 'allow': 1024}, {'type': 'member', 'id': '810396304780951592', 'deny_new': '0', 'deny': 0, 'allow_new': '1024', 'allow': 1024}, {'type': 'role', 'id': '817285544983789578', 'deny_new': '0', 'deny': 0, 'allow_new': '1024', 'allow': 1024}], 'parent_id': None, 'nsfw': False, 'name': '🚦config-bot', 'last_message_id': '873188339572949024', 'id': '810110127729803264'}, {'user_limit': 0, 'type': 2, 'rtc_region': None, 'position': 7, 'permission_overwrites': [], 'parent_id': '809785533442162748', 'nsfw': False, 'name': '🎧 MOBILE LEGEND', 'id': '841151560142815252', 'bitrate': 64000}, {'video_quality_mode': 2, 'user_limit': 0, 'type': 2, 'rtc_region': None, 'position': 14, 'permission_overwrites': [], 'parent_id': '809785533442162749', 'nsfw': False, 'name': '🎧 Clubhouse Kacang', 'id': '810108116707704842', 'bitrate': 64000}, {'type': 4, 'position': 6, 'permission_overwrites': [], 'parent_id': None, 'nsfw': False, 'name': '🎻 AMAZING SATURDAY', 'id': '812455787930714203'}, {'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 11, 'permission_overwrites': [{'type': 'role', 'id': '809785532962832414', 'deny_new': '805314576', 'deny': 805314576, 'allow_new': '0', 'allow': 0}], 'parent_id': '810108337441341470', 'nsfw': False, 'name': '🇮🇩indonesianfriendsbar', 'last_message_id': '872707712826376193', 'id': '871610923742265385'}, {'type': 0, 'topic': 'Channel untuk bermain WW atau Mafia!', 'rate_limit_per_user': 0, 'position': 35, 'permission_overwrites': [{'type': 'member', 'id': '306583221565521921', 'deny_new': '0', 'deny': 0, 'allow_new': '288832', 'allow': 288832}, {'type': 'role', 'id': '809785532962832414', 'deny_new': '0', 'deny': 0, 'allow_new': '2112', 'allow': 2112}, {'type': 'role', 'id': '810017567502106635', 'deny_new': '0', 'deny': 0, 'allow_new': '445504', 'allow': 445504}], 'parent_id': '809785533442162748', 'nsfw': False, 'name': '🐺werewolf-party', 'last_message_id': '829362059816730724', 'id': '810018757094670377'}, {'user_limit': 0, 'type': 2, 'rtc_region': None, 'position': 0, 'permission_overwrites': [{'type': 'member', 'id': '458276816071950337', 'deny_new': '0', 'deny': 0, 'allow_new': '1068048', 'allow': 1068048}, {'type': 'role', 'id': '809785532962832414', 'deny_new': '1050624', 'deny': 1050624, 'allow_new': '1024', 'allow': 1024}], 'parent_id': '824945299771621376', 'nsfw': False, 'name': 'All Members: 104', 'id': '824945303052353586', 'bitrate': 64000}, {'user_limit': 0, 'type': 2, 'rtc_region': None, 'position': 11, 'permission_overwrites': [{'type': 'role', 'id': '809785532962832414', 'deny_new': '331350800', 'deny': 331350800, 'allow_new': '3146753', 'allow': 3146753}], 'parent_id': '810108212509671435', 'nsfw': False, 'name': '📻 Groovy Radio Bar', 'id': '809785712337485876', 'bitrate': 64000}, {'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 22, 'permission_overwrites': [{'type': 'member', 'id': '733035786664149104', 'deny_new': '0', 'deny': 0, 'allow_new': '2953313361', 'allow': 805829713}, {'type': 'role', 'id': '809785532962832414', 'deny_new': '2953883665', 'deny': 806400017, 'allow_new': '478272', 'allow': 478272}, {'type': 'role', 'id': '811534570876567564', 'deny_new': '1024', 'deny': 1024, 'allow_new': '0', 'allow': 0}], 'parent_id': '811628285875585024', 'nsfw': False, 'name': '🎫gift-your-reputation-and-likes-here', 'last_pin_timestamp': '2021-03-09T13:11:31+00:00', 'last_message_id': '872829910941593641', 'id': '818687152010428416'}, {'type': 4, 'position': 10, 'permission_overwrites': [], 'parent_id': None, 'nsfw': False, 'name': '🎦 KACANG CINEMA', 'id': '810108594489262112'}, {'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 0, 'permission_overwrites': [{'type': 'role', 'id': '809785532962832414', 'deny_new': '805763088', 'deny': 805763088, 'allow_new': '65601', 'allow': 65601}], 'parent_id': None, 'nsfw': False, 'name': '👋welcome', 'last_message_id': '872341361200889906', 'id': '810103857144791061'}, {'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 25, 'permission_overwrites': [{'type': 'role', 'id': '809785532962832414', 'deny_new': '2953246801', 'deny': 805763153, 'allow_new': '66560', 'allow': 66560}], 'parent_id': '823123520623214603', 'nsfw': False, 'name': '🃏guide', 'last_message_id': '823126264529158145', 'id': '823126136946294814'}, {'user_limit': 0, 'type': 2, 'rtc_region': None, 'position': 10, 'permission_overwrites': [{'type': 'role', 'id': '809785532962832414', 'deny_new': '297795856', 'deny': 297795856, 'allow_new': '36701697', 'allow': 36701697}], 'parent_id': '810108594489262112', 'nsfw': False, 'name': '🎥 Bioskop Kacang', 'id': '809979265717501972', 'bitrate': 64000}, {'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 32, 'permission_overwrites': [], 'parent_id': '870913631653605377', 'nsfw': False, 'name': '⚙owo-changelog', 'last_message_id': '870914872219680840', 'id': '870914177806503997'}, {'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 17, 'permission_overwrites': [{'type': 'member', 'id': '733035786664149104', 'deny_new': '0', 'deny': 0, 'allow_new': '1024', 'allow': 1024}, {'type': 'role', 'id': '809785532962832414', 'deny_new': '2952790032', 'deny': 805306384, 'allow_new': '523329', 'allow': 523329}, {'type': 'role', 'id': '811534570876567564', 'deny_new': '3072', 'deny': 3072, 'allow_new': '0', 'allow': 0}, {'type': 'role', 'id': '813955210580983850', 'deny_new': '2953313361', 'deny': 805829713, 'allow_new': '0', 'allow': 0}, {'type': 'role', 'id': '870907982202949632', 'deny_new': '1024', 'deny': 1024, 'allow_new': '0', 'allow': 0}], 'parent_id': '811628285875585024', 'nsfw': False, 'name': '🎪hyejoobar-1', 'last_pin_timestamp': '2021-07-12T06:40:31+00:00', 'last_message_id': '873205842562916402', 'id': '811620398894022686'}, {'type': 4, 'position': 11, 'permission_overwrites': [], 'parent_id': None, 'nsfw': False, 'name': '🎼  KACANG MUSIC', 'id': '810108212509671435'}, {'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 8, 'permission_overwrites': [{'type': 'member', 'id': '733035786664149104', 'deny_new': '0', 'deny': 0, 'allow_new': '1049600', 'allow': 1049600}, {'type': 'role', 'id': '809785532962832414', 'deny_new': '1049600', 'deny': 1049600, 'allow_new': '0', 'allow': 0}, {'type': 'role', 'id': '810103311495725087', 'deny_new': '0', 'deny': 0, 'allow_new': '1049600', 'allow': 1049600}, {'type': 'role', 'id': '824963135886065724', 'deny_new': '0', 'deny': 0, 'allow_new': '1049600', 'allow': 1049600}, {'type': 'role', 'id': '810119987078889524', 'deny_new': '0', 'deny': 0, 'allow_new': '1049600', 'allow': 1049600}], 'parent_id': '871587452136063026', 'nsfw': False, 'name': '🐉vip-room-sum', 'last_message_id': '873106321875038238', 'id': '857181700165861387'}, {'type': 4, 'position': 2, 'permission_overwrites': [], 'parent_id': None, 'nsfw': False, 'name': '🌈 LOUNGE LOBBY', 'id': '810108337441341470'}, {'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 2, 'permission_overwrites': [{'type': 'role', 'id': '809785532962832414', 'deny_new': '1024', 'deny': 1024, 'allow_new': '0', 'allow': 0}, {'type': 'role', 'id': '810166510634663968', 'deny_new': '0', 'deny': 0, 'allow_new': '1024', 'allow': 1024}], 'parent_id': None, 'nsfw': False, 'name': '⛔logs', 'last_message_id': '873184035701153882', 'id': '810170260388839524'}, {'user_limit': 0, 'type': 2, 'rtc_region': None, 'position': 5, 'permission_overwrites': [{'type': 'role', 'id': '809785532962832414', 'deny_new': '297795856', 'deny': 297795856, 'allow_new': '36701697', 'allow': 36701697}], 'parent_id': '809785533442162748', 'nsfw': False, 'name': '🎧 AMONG US', 'id': '809788702712135751', 'bitrate': 64000}, {'user_limit': 0, 'type': 2, 'rtc_region': None, 'position': 4, 'permission_overwrites': [], 'parent_id': '870913631653605377', 'nsfw': False, 'name': '🎧 OWO TALK', 'id': '870915579249303553', 'bitrate': 64000}, {'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 18, 'permission_overwrites': [{'type': 'member', 'id': '733035786664149104', 'deny_new': '0', 'deny': 0, 'allow_new': '0', 'allow': 0}, {'type': 'role', 'id': '809785532962832414', 'deny_new': '1048576', 'deny': 1048576, 'allow_new': '0', 'allow': 0}, {'type': 'role', 'id': '811534570876567564', 'deny_new': '1024', 'deny': 1024, 'allow_new': '0', 'allow': 0}, {'type': 'role', 'id': '870907982202949632', 'deny_new': '1024', 'deny': 1024, 'allow_new': '0', 'allow': 0}], 'parent_id': '811628285875585024', 'nsfw': False, 'name': '🎪hyejoobar-2', 'last_message_id': '872442186954842132', 'id': '841866204729835520'}, {'user_limit': 0, 'type': 2, 'rtc_region': None, 'position': 3, 'permission_overwrites': [{'type': 'member', 'id': '756337264644194404', 'deny_new': '0', 'deny': 0, 'allow_new': '1049600', 'allow': 1049600}, {'type': 'role', 'id': '809785532962832414', 'deny_new': '0', 'deny': 0, 'allow_new': '0', 'allow': 0}, {'type': 'role', 'id': '810119987078889524', 'deny_new': '0', 'deny': 0, 'allow_new': '1049600', 'allow': 1049600}], 'parent_id': '812455787930714203', 'nsfw': False, 'name': '🎧 🎶 DoReMi Market', 'id': '811532186732986378', 'bitrate': 64000}, {'user_limit': 0, 'type': 2, 'rtc_region': None, 'position': 13, 'permission_overwrites': [], 'parent_id': '810108212509671435', 'nsfw': False, 'name': '🎤 Singing With Kacang', 'id': '841167385448153098', 'bitrate': 64000}, {'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 28, 'permission_overwrites': [{'type': 'member', 'id': '733035786664149104', 'deny_new': '268487760', 'deny': 268487760, 'allow_new': '0', 'allow': 0}, {'type': 'member', 'id': '756337264644194404', 'deny_new': '0', 'deny': 0, 'allow_new': '1024', 'allow': 1024}, {'type': 'role', 'id': '809785532962832414', 'deny_new': '0', 'deny': 0, 'allow_new': '65536', 'allow': 65536}, {'type': 'role', 'id': '810119987078889524', 'deny_new': '0', 'deny': 0, 'allow_new': '1024', 'allow': 1024}], 'parent_id': '812455787930714203', 'nsfw': False, 'name': '🎶doremi-market', 'last_pin_timestamp': '2021-02-19T13:11:10.250000+00:00', 'last_message_id': '871622828984795196', 'id': '811530978333556736'}, {'type': 4, 'position': 7, 'permission_overwrites': [{'type': 'role', 'id': '809785532962832414', 'deny_new': '0', 'deny': 0, 'allow_new': '0', 'allow': 0}], 'parent_id': None, 'nsfw': False, 'name': '🎲 Alita Mini Games', 'id': '812453018057834526'}, {'user_limit': 0, 'type': 2, 'rtc_region': None, 'position': 9, 'permission_overwrites': [], 'parent_id': '809785533442162748', 'nsfw': False, 'name': '🎧 SAUSAGE MAN', 'id': '869217109245317180', 'bitrate': 64000}, {'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 20, 'permission_overwrites': [{'type': 'member', 'id': '733035786664149104', 'deny_new': '0', 'deny': 0, 'allow_new': '0', 'allow': 0}, {'type': 'role', 'id': '809785532962832414', 'deny_new': '1048576', 'deny': 1048576, 'allow_new': '0', 'allow': 0}], 'parent_id': '811628285875585024', 'nsfw': False, 'name': '💹market-store-2', 'last_message_id': '872477739230322738', 'id': '841866463321128961'}, {'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 24, 'permission_overwrites': [{'type': 'role', 'id': '809785532962832414', 'deny_new': '806367249', 'deny': 806367249, 'allow_new': '511040', 'allow': 511040}, {'type': 'role', 'id': '857510391499718656', 'deny_new': '0', 'deny': 0, 'allow_new': '1049600', 'allow': 1049600}], 'parent_id': '857511078879166484', 'nsfw': False, 'name': '🎪vitabar', 'last_message_id': '871606548382752769', 'id': '871606382485463100'}, {'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 7, 'permission_overwrites': [{'type': 'member', 'id': '508759831755096074', 'deny_new': '1024', 'deny': 1024, 'allow_new': '0', 'allow': 0}, {'type': 'member', 'id': '733035786664149104', 'deny_new': '0', 'deny': 0, 'allow_new': '1049600', 'allow': 1049600}, {'type': 'role', 'id': '809785532962832414', 'deny_new': '1049600', 'deny': 1049600, 'allow_new': '0', 'allow': 0}, {'type': 'role', 'id': '810103311495725087', 'deny_new': '0', 'deny': 0, 'allow_new': '1049600', 'allow': 1049600}, {'type': 'role', 'id': '810119987078889524', 'deny_new': '0', 'deny': 0, 'allow_new': '1049600', 'allow': 1049600}, {'type': 'role', 'id': '824963135886065724', 'deny_new': '0', 'deny': 0, 'allow_new': '1049600', 'allow': 1049600}], 'parent_id': '871587452136063026', 'nsfw': False, 'name': '🐉vip-room-cards', 'last_message_id': '873229273178210364', 'id': '857182244614307850'}, {'user_limit': 0, 'type': 2, 'rtc_region': None, 'position': 6, 'permission_overwrites': [], 'parent_id': '809785533442162748', 'nsfw': False, 'name': '🎧 PUBG', 'id': '841151514755334175', 'bitrate': 64000}, {'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 6, 'permission_overwrites': [{'type': 'member', 'id': '733035786664149104', 'deny_new': '0', 'deny': 0, 'allow_new': '1049600', 'allow': 1049600}, {'type': 'role', 'id': '809785532962832414', 'deny_new': '1049600', 'deny': 1049600, 'allow_new': '0', 'allow': 0}, {'type': 'role', 'id': '810103311495725087', 'deny_new': '0', 'deny': 0, 'allow_new': '1049600', 'allow': 1049600}, {'type': 'role', 'id': '810119987078889524', 'deny_new': '0', 'deny': 0, 'allow_new': '1049600', 'allow': 1049600}, {'type': 'role', 'id': '824963135886065724', 'deny_new': '0', 'deny': 0, 'allow_new': '1049600', 'allow': 1049600}], 'parent_id': '871587452136063026', 'nsfw': False, 'name': '💸tax-authorities', 'last_message_id': '866121692200042496', 'id': '810121939392790548'}, {'type': 0, 'topic': None, 'rate_limit_per_user': 120, 'position': 16, 'permission_overwrites': [{'type': 'member', 'id': '733035786664149104', 'deny_new': '0', 'deny': 0, 'allow_new': '2953313361', 'allow': 805829713}, {'type': 'role', 'id': '809785532962832414', 'deny_new': '2953900049', 'deny': 806416401, 'allow_new': '461888', 'allow': 461888}], 'parent_id': '811628285875585024', 'nsfw': False, 'name': '❄sum-only', 'last_message_id': '873156574842069133', 'id': '817794308840357898'}, {'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 36, 'permission_overwrites': [], 'parent_id': '809785533442162748', 'nsfw': False, 'name': '🚀among-us-party', 'last_message_id': '872159212585771009', 'id': '841151262879383552'}, {'type': 0, 'topic': 'Use only Groovy command!', 'rate_limit_per_user': 15, 'position': 38, 'permission_overwrites': [{'type': 'member', 'id': '184405311681986560', 'deny_new': '1024', 'deny': 1024, 'allow_new': '0', 'allow': 0}, {'type': 'role', 'id': '809816220026142741', 'deny_new': '0', 'deny': 0, 'allow_new': '0', 'allow': 0}], 'parent_id': '810108212509671435', 'nsfw': False, 'name': '🎶groovy-request-bar', 'last_pin_timestamp': None, 'last_message_id': '872851626367541259', 'id': '810095254363176991'}], 'guild_hashes': {'version': 1, 'roles': {'omitted': False, 'hash': 'Wry3O+bNTGM'}, 'metadata': {'omitted': False, 'hash': 'Yf18oJOlgho'}, 'channels': {'omitted': False, 'hash': '27mOp5UcGQw'}}, 'region': 'singapore', 'stickers': [], 'id': '809785532962832414', 'public_updates_channel_id': None, 'member_count': 104, 'banner': None, 'system_channel_flags': 0, 'explicit_content_filter': 0, 'max_video_channel_users': 25, 'premium_subscription_count': 5, 'unavailable': False}}
+2021-08-06 22:56:10,104:DEBUG:discord.client: Dispatching event socket_response
+2021-08-06 22:56:10,107:DEBUG:discord.client: Dispatching event socket_raw_receive
+2021-08-06 22:56:10,107:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'GUILD_CREATE', 's': 3, 'op': 0, 'd': {'mfa_level': 0, 'name': "hasuki's server", 'application_command_counts': {'3': 0, '2': 0, '1': 9}, 'nsfw_level': 0, 'verification_level': 0, 'description': None, 'owner_id': '393465791674056704', 'nsfw': False, 'splash': None, 'features': [], 'discovery_splash': None, 'voice_states': [], 'stage_instances': [], 'vanity_url_code': None, 'presences': [], 'max_members': 100000, 'roles': [{'position': 0, 'permissions_new': '247064940097', 'permissions': 104320577, 'name': '@everyone', 'mentionable': False, 'managed': False, 'id': '810098494517674005', 'hoist': False, 'color': 0}, {'position': 1, 'permissions_new': '6546771521', 'permissions': 104320577, 'name': 'new role', 'mentionable': False, 'managed': False, 'id': '810099815899070484', 'hoist': False, 'color': 0}, {'tags': {'bot_id': '727039427775299605'}, 'position': 1, 'permissions_new': '6441926143', 'permissions': 2146958847, 'name': 'Spark', 'mentionable': False, 'managed': True, 'id': '811547717280858144', 'hoist': False, 'color': 0}, {'tags': {'bot_id': '765207869032366090'}, 'position': 1, 'permissions_new': '4294967304', 'permissions': 8, 'name': 'Announce', 'mentionable': False, 'managed': True, 'id': '811599396042965016', 'hoist': False, 'color': 0}, {'tags': {'bot_id': '681770687614156811'}, 'position': 1, 'permissions_new': '6174539007', 'permissions': 1879571711, 'name': 'Piggy', 'mentionable': False, 'managed': True, 'id': '812451475572785172', 'hoist': False, 'color': 0}, {'position': 1, 'permissions_new': '6546771521', 'permissions': 104320577, 'name': 'piggyusers', 'mentionable': False, 'managed': False, 'id': '812451475857866784', 'hoist': False, 'color': 10181046}, {'tags': {'bot_id': '825368890976501810'}, 'position': 1, 'permissions_new': '8', 'permissions': 8, 'name': 'Project Kacang 1.0.0', 'mentionable': False, 'managed': True, 'id': '838388988419112971', 'hoist': False, 'color': 0}], 'joined_at': '2021-05-02T12:18:31.382622+00:00', 'icon': None, 'emojis': [], 'application_command_count': 9, 'default_message_notifications': 0, 'lazy': True, 'afk_timeout': 300, 'rules_channel_id': None, 'system_channel_id': '810098494970265642', 'application_id': None, 'afk_channel_id': None, 'preferred_locale': 'en-US', 'large': False, 'members': [{'user': {'username': 'Project Kacang 1.0.0', 'id': '825368890976501810', 'discriminator': '4837', 'bot': True, 'avatar': 'ae518ba75b3a9f55c37d4618365f338f'}, 'roles': ['838388988419112971'], 'premium_since': None, 'pending': False, 'nick': None, 'mute': False, 'joined_at': '2021-05-02T12:18:31.382622+00:00', 'is_pending': False, 'hoisted_role': None, 'deaf': False}], 'threads': [], 'premium_tier': 0, 'channels': [{'type': 4, 'position': 0, 'permission_overwrites': [], 'name': 'Text Channels', 'id': '810098494970265640'}, {'type': 4, 'position': 0, 'permission_overwrites': [], 'name': 'Voice Channels', 'id': '810098494970265641'}, {'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 0, 'permission_overwrites': [], 'parent_id': '810098494970265640', 'name': 'general', 'last_message_id': '838396129850818581', 'id': '810098494970265642'}, {'user_limit': 0, 'type': 2, 'rtc_region': None, 'position': 0, 'permission_overwrites': [], 'parent_id': '810098494970265641', 'name': 'General', 'id': '810098494970265643', 'bitrate': 64000}, {'type': 4, 'position': 1, 'permission_overwrites': [], 'name': '== PIGGY PLAYGROUND ==', 'id': '812451804905209888'}, {'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 2, 'permission_overwrites': [], 'parent_id': '812451804905209888', 'name': 'piggy-play', 'last_message_id': '841091454738628619', 'id': '812451805303799849'}, {'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 3, 'permission_overwrites': [], 'parent_id': '812451804905209888', 'name': 'piggy-battleground', 'last_message_id': None, 'id': '812451806163894272'}], 'guild_hashes': {'version': 1, 'roles': {'omitted': False, 'hash': 'H4ykbfFB8Eo'}, 'metadata': {'omitted': False, 'hash': 'z7MvQ40ig2c'}, 'channels': {'omitted': False, 'hash': 'DOdJtq1v6P0'}}, 'region': 'singapore', 'stickers': [], 'id': '810098494517674005', 'public_updates_channel_id': None, 'member_count': 7, 'banner': None, 'system_channel_flags': 0, 'explicit_content_filter': 0, 'max_video_channel_users': 25, 'premium_subscription_count': 0, 'unavailable': False}}
+2021-08-06 22:56:10,107:DEBUG:discord.client: Dispatching event socket_response
+2021-08-06 22:56:10,108:DEBUG:discord.client: Dispatching event guild_available
+2021-08-06 22:56:10,108:DEBUG:discord.client: Dispatching event guild_available
+2021-08-06 22:56:12,120:DEBUG:discord.client: Dispatching event ready
+2021-08-06 22:56:18,325:DEBUG:discord.client: Dispatching event socket_raw_receive
+2021-08-06 22:56:18,325:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'TYPING_START', 's': 4, 'op': 0, 'd': {'user_id': '393465791674056704', 'timestamp': 1628265378, 'member': {'user': {'username': 'diaz', 'public_flags': 128, 'id': '393465791674056704', 'discriminator': '7212', 'avatar': '6849238ee02900dc6fe8bca96a9130a9'}, 'roles': ['810101702735953930', '852947966767530024'], 'premium_since': '2021-06-12T02:22:18.874000+00:00', 'pending': False, 'nick': 'Diaz', 'mute': False, 'joined_at': '2021-02-12T15:37:49.045000+00:00', 'is_pending': False, 'hoisted_role': '810101702735953930', 'deaf': False, 'avatar': None}, 'channel_id': '825639436419203094', 'guild_id': '809785532962832414'}}
+2021-08-06 22:56:18,326:DEBUG:discord.client: Dispatching event socket_response
+2021-08-06 22:56:18,326:DEBUG:discord.client: Dispatching event typing
+2021-08-06 22:56:18,517:DEBUG:discord.client: Dispatching event socket_raw_receive
+2021-08-06 22:56:18,518:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 5, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2021-08-06T15:56:18.651000+00:00', 'referenced_message': None, 'pinned': False, 'nonce': '873233029525405696', 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': ['810101702735953930', '852947966767530024'], 'premium_since': '2021-06-12T02:22:18.874000+00:00', 'pending': False, 'nick': 'Diaz', 'mute': False, 'joined_at': '2021-02-12T15:37:49.045000+00:00', 'is_pending': False, 'hoisted_role': '810101702735953930', 'deaf': False, 'avatar': None}, 'id': '873233031735963658', 'flags': 0, 'embeds': [], 'edited_timestamp': None, 'content': '..cmd', 'components': [], 'channel_id': '825639436419203094', 'author': {'username': 'diaz', 'public_flags': 128, 'id': '393465791674056704', 'discriminator': '7212', 'avatar': '6849238ee02900dc6fe8bca96a9130a9'}, 'attachments': [], 'guild_id': '809785532962832414'}}
+2021-08-06 22:56:18,518:DEBUG:discord.client: Dispatching event socket_response
+2021-08-06 22:56:18,519:DEBUG:discord.client: Dispatching event message
+2021-08-06 22:56:18,520:DEBUG:discord.client: Dispatching event command
+2021-08-06 22:56:18,520:DEBUG:discord.client: Dispatching event command_error
+2021-08-06 22:56:50,935:DEBUG:discord.gateway: Keeping shard ID None websocket alive with sequence 5.
+2021-08-06 22:56:51,303:DEBUG:discord.client: Dispatching event socket_raw_receive
+2021-08-06 22:56:51,303:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2021-08-06 22:56:51,303:DEBUG:discord.client: Dispatching event socket_response
+2021-08-06 22:57:32,189:DEBUG:discord.gateway: Keeping shard ID None websocket alive with sequence 5.
+2021-08-06 22:57:32,511:DEBUG:discord.client: Dispatching event socket_raw_receive
+2021-08-06 22:57:32,512:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2021-08-06 22:57:32,512:DEBUG:discord.client: Dispatching event socket_response
+2021-08-06 22:58:13,447:DEBUG:discord.gateway: Keeping shard ID None websocket alive with sequence 5.
+2021-08-06 22:58:13,735:DEBUG:discord.client: Dispatching event socket_raw_receive
+2021-08-06 22:58:13,736:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2021-08-06 22:58:13,736:DEBUG:discord.client: Dispatching event socket_response
+2021-08-06 22:58:54,709:DEBUG:discord.gateway: Keeping shard ID None websocket alive with sequence 5.
+2021-08-06 22:58:55,002:DEBUG:discord.client: Dispatching event socket_raw_receive
+2021-08-06 22:58:55,002:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2021-08-06 22:58:55,002:DEBUG:discord.client: Dispatching event socket_response
+2021-08-06 22:59:35,976:DEBUG:discord.gateway: Keeping shard ID None websocket alive with sequence 5.
+2021-08-06 22:59:42,586:DEBUG:discord.client: Dispatching event socket_raw_receive
+2021-08-06 22:59:42,587:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2021-08-06 22:59:42,587:DEBUG:discord.client: Dispatching event socket_response
+2021-08-06 23:00:17,240:DEBUG:discord.gateway: Keeping shard ID None websocket alive with sequence 5.
+2021-08-06 23:00:19,116:DEBUG:discord.client: Dispatching event socket_raw_receive
+2021-08-06 23:00:19,116:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2021-08-06 23:00:19,116:DEBUG:discord.client: Dispatching event socket_response
+2021-08-06 23:00:58,505:DEBUG:discord.gateway: Keeping shard ID None websocket alive with sequence 5.
+2021-08-06 23:00:58,816:DEBUG:discord.client: Dispatching event socket_raw_receive
+2021-08-06 23:00:58,817:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2021-08-06 23:00:58,817:DEBUG:discord.client: Dispatching event socket_response
+2021-08-06 23:01:39,768:DEBUG:discord.gateway: Keeping shard ID None websocket alive with sequence 5.
+2021-08-06 23:01:41,027:DEBUG:discord.client: Dispatching event socket_raw_receive
+2021-08-06 23:01:41,027:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2021-08-06 23:01:41,027:DEBUG:discord.client: Dispatching event socket_response
+2021-08-06 23:02:21,031:DEBUG:discord.gateway: Keeping shard ID None websocket alive with sequence 5.
+2021-08-06 23:02:40,266:DEBUG:discord.gateway: Received WSMessage(type=<WSMsgType.CLOSED: 257>, data=None, extra=None)
+2021-08-06 23:02:40,267:INFO:discord.gateway: Websocket closed with 1006, attempting a reconnect.
+2021-08-06 23:02:40,267:INFO:discord.client: Got a request to RESUME the websocket.
+2021-08-06 23:02:40,267:DEBUG:discord.client: Dispatching event disconnect
+2021-08-06 23:02:40,270:DEBUG:discord.client: Dispatching event disconnect
+2021-08-06 23:02:40,271:ERROR:discord.client: Attempting a reconnect in 0.47s
+Traceback (most recent call last):
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 999, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 865, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\resolver.py", line 31, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Program Files\Python38\lib\asyncio\base_events.py", line 825, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Program Files\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Program Files\Python38\lib\socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\client.py", line 563, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Program Files\Python38\lib\asyncio\tasks.py", line 494, in wait_for
+    return fut.result()
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\gateway.py", line 305, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\http.py", line 967, in get_gateway
+    data = await self.request(Route('GET', '/gateway'))
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\http.py", line 192, in request
+    async with self.__session.request(method, url, **kwargs) as r:
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\client.py", line 1117, in __aenter__
+    self._resp = await self._coro
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\client.py", line 520, in _request
+    conn = await self._connector.connect(
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 535, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 892, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 1011, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+2021-08-06 23:02:40,827:DEBUG:discord.client: Dispatching event disconnect
+2021-08-06 23:02:40,827:ERROR:discord.client: Attempting a reconnect in 3.52s
+Traceback (most recent call last):
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 999, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 865, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\resolver.py", line 31, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Program Files\Python38\lib\asyncio\base_events.py", line 825, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Program Files\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Program Files\Python38\lib\socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\client.py", line 563, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Program Files\Python38\lib\asyncio\tasks.py", line 494, in wait_for
+    return fut.result()
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\gateway.py", line 305, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\http.py", line 967, in get_gateway
+    data = await self.request(Route('GET', '/gateway'))
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\http.py", line 192, in request
+    async with self.__session.request(method, url, **kwargs) as r:
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\client.py", line 1117, in __aenter__
+    self._resp = await self._coro
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\client.py", line 520, in _request
+    conn = await self._connector.connect(
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 535, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 892, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 1011, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+2021-08-06 23:02:44,362:DEBUG:discord.client: Dispatching event disconnect
+2021-08-06 23:02:44,362:ERROR:discord.client: Attempting a reconnect in 6.39s
+Traceback (most recent call last):
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 999, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 865, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\resolver.py", line 31, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Program Files\Python38\lib\asyncio\base_events.py", line 825, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Program Files\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Program Files\Python38\lib\socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\client.py", line 563, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Program Files\Python38\lib\asyncio\tasks.py", line 494, in wait_for
+    return fut.result()
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\gateway.py", line 305, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\http.py", line 967, in get_gateway
+    data = await self.request(Route('GET', '/gateway'))
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\http.py", line 192, in request
+    async with self.__session.request(method, url, **kwargs) as r:
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\client.py", line 1117, in __aenter__
+    self._resp = await self._coro
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\client.py", line 520, in _request
+    conn = await self._connector.connect(
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 535, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 892, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 1011, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+2021-08-06 23:02:50,765:DEBUG:discord.client: Dispatching event disconnect
+2021-08-06 23:02:50,765:ERROR:discord.client: Attempting a reconnect in 5.81s
+Traceback (most recent call last):
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 999, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 865, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\resolver.py", line 31, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Program Files\Python38\lib\asyncio\base_events.py", line 825, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Program Files\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Program Files\Python38\lib\socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\client.py", line 563, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Program Files\Python38\lib\asyncio\tasks.py", line 494, in wait_for
+    return fut.result()
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\gateway.py", line 305, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\http.py", line 967, in get_gateway
+    data = await self.request(Route('GET', '/gateway'))
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\http.py", line 192, in request
+    async with self.__session.request(method, url, **kwargs) as r:
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\client.py", line 1117, in __aenter__
+    self._resp = await self._coro
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\client.py", line 520, in _request
+    conn = await self._connector.connect(
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 535, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 892, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 1011, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+2021-08-06 23:02:56,596:DEBUG:discord.client: Dispatching event disconnect
+2021-08-06 23:02:56,596:ERROR:discord.client: Attempting a reconnect in 24.01s
+Traceback (most recent call last):
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 999, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 865, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\resolver.py", line 31, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Program Files\Python38\lib\asyncio\base_events.py", line 825, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Program Files\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Program Files\Python38\lib\socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\client.py", line 563, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Program Files\Python38\lib\asyncio\tasks.py", line 494, in wait_for
+    return fut.result()
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\gateway.py", line 305, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\http.py", line 967, in get_gateway
+    data = await self.request(Route('GET', '/gateway'))
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\http.py", line 192, in request
+    async with self.__session.request(method, url, **kwargs) as r:
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\client.py", line 1117, in __aenter__
+    self._resp = await self._coro
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\client.py", line 520, in _request
+    conn = await self._connector.connect(
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 535, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 892, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 1011, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+2021-08-06 23:03:20,628:DEBUG:discord.client: Dispatching event disconnect
+2021-08-06 23:03:20,629:ERROR:discord.client: Attempting a reconnect in 4.63s
+Traceback (most recent call last):
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 999, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 865, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\resolver.py", line 31, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Program Files\Python38\lib\asyncio\base_events.py", line 825, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Program Files\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Program Files\Python38\lib\socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\client.py", line 563, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Program Files\Python38\lib\asyncio\tasks.py", line 494, in wait_for
+    return fut.result()
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\gateway.py", line 305, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\http.py", line 967, in get_gateway
+    data = await self.request(Route('GET', '/gateway'))
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\http.py", line 192, in request
+    async with self.__session.request(method, url, **kwargs) as r:
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\client.py", line 1117, in __aenter__
+    self._resp = await self._coro
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\client.py", line 520, in _request
+    conn = await self._connector.connect(
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 535, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 892, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 1011, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+2021-08-06 23:03:25,278:DEBUG:discord.client: Dispatching event disconnect
+2021-08-06 23:03:25,279:ERROR:discord.client: Attempting a reconnect in 28.30s
+Traceback (most recent call last):
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 999, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 865, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\resolver.py", line 31, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Program Files\Python38\lib\asyncio\base_events.py", line 825, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Program Files\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Program Files\Python38\lib\socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\client.py", line 563, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Program Files\Python38\lib\asyncio\tasks.py", line 494, in wait_for
+    return fut.result()
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\gateway.py", line 305, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\http.py", line 967, in get_gateway
+    data = await self.request(Route('GET', '/gateway'))
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\http.py", line 192, in request
+    async with self.__session.request(method, url, **kwargs) as r:
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\client.py", line 1117, in __aenter__
+    self._resp = await self._coro
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\client.py", line 520, in _request
+    conn = await self._connector.connect(
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 535, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 892, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 1011, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+2021-08-06 23:03:53,592:DEBUG:discord.client: Dispatching event disconnect
+2021-08-06 23:03:53,592:ERROR:discord.client: Attempting a reconnect in 18.10s
+Traceback (most recent call last):
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 999, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 865, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\resolver.py", line 31, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Program Files\Python38\lib\asyncio\base_events.py", line 825, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Program Files\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Program Files\Python38\lib\socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\client.py", line 563, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Program Files\Python38\lib\asyncio\tasks.py", line 494, in wait_for
+    return fut.result()
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\gateway.py", line 305, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\http.py", line 967, in get_gateway
+    data = await self.request(Route('GET', '/gateway'))
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\http.py", line 192, in request
+    async with self.__session.request(method, url, **kwargs) as r:
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\client.py", line 1117, in __aenter__
+    self._resp = await self._coro
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\client.py", line 520, in _request
+    conn = await self._connector.connect(
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 535, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 892, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 1011, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+2021-08-06 23:04:11,708:DEBUG:discord.client: Dispatching event disconnect
+2021-08-06 23:04:11,708:ERROR:discord.client: Attempting a reconnect in 144.47s
+Traceback (most recent call last):
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 999, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 865, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\resolver.py", line 31, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Program Files\Python38\lib\asyncio\base_events.py", line 825, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Program Files\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Program Files\Python38\lib\socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\client.py", line 563, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Program Files\Python38\lib\asyncio\tasks.py", line 494, in wait_for
+    return fut.result()
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\gateway.py", line 305, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\http.py", line 967, in get_gateway
+    data = await self.request(Route('GET', '/gateway'))
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\http.py", line 192, in request
+    async with self.__session.request(method, url, **kwargs) as r:
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\client.py", line 1117, in __aenter__
+    self._resp = await self._coro
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\client.py", line 520, in _request
+    conn = await self._connector.connect(
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 535, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 892, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 1011, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+2021-08-06 23:06:36,196:DEBUG:discord.client: Dispatching event disconnect
+2021-08-06 23:06:36,196:ERROR:discord.client: Attempting a reconnect in 474.84s
+Traceback (most recent call last):
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 999, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 865, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\resolver.py", line 31, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Program Files\Python38\lib\asyncio\base_events.py", line 825, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Program Files\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Program Files\Python38\lib\socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\client.py", line 563, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Program Files\Python38\lib\asyncio\tasks.py", line 494, in wait_for
+    return fut.result()
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\gateway.py", line 305, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\http.py", line 967, in get_gateway
+    data = await self.request(Route('GET', '/gateway'))
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\http.py", line 192, in request
+    async with self.__session.request(method, url, **kwargs) as r:
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\client.py", line 1117, in __aenter__
+    self._resp = await self._coro
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\client.py", line 520, in _request
+    conn = await self._connector.connect(
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 535, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 892, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 1011, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+2021-08-06 23:14:31,042:DEBUG:discord.client: Dispatching event disconnect
+2021-08-06 23:14:31,042:ERROR:discord.client: Attempting a reconnect in 47.84s
+Traceback (most recent call last):
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 999, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 865, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\resolver.py", line 31, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Program Files\Python38\lib\asyncio\base_events.py", line 825, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Program Files\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Program Files\Python38\lib\socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\client.py", line 563, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Program Files\Python38\lib\asyncio\tasks.py", line 494, in wait_for
+    return fut.result()
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\gateway.py", line 305, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\http.py", line 967, in get_gateway
+    data = await self.request(Route('GET', '/gateway'))
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\http.py", line 192, in request
+    async with self.__session.request(method, url, **kwargs) as r:
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\client.py", line 1117, in __aenter__
+    self._resp = await self._coro
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\client.py", line 520, in _request
+    conn = await self._connector.connect(
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 535, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 892, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 1011, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+2021-08-06 23:15:18,889:DEBUG:discord.client: Dispatching event disconnect
+2021-08-06 23:15:18,889:ERROR:discord.client: Attempting a reconnect in 123.65s
+Traceback (most recent call last):
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 999, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 865, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\resolver.py", line 31, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Program Files\Python38\lib\asyncio\base_events.py", line 825, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Program Files\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Program Files\Python38\lib\socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\client.py", line 563, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Program Files\Python38\lib\asyncio\tasks.py", line 494, in wait_for
+    return fut.result()
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\gateway.py", line 305, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\http.py", line 967, in get_gateway
+    data = await self.request(Route('GET', '/gateway'))
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\http.py", line 192, in request
+    async with self.__session.request(method, url, **kwargs) as r:
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\client.py", line 1117, in __aenter__
+    self._resp = await self._coro
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\client.py", line 520, in _request
+    conn = await self._connector.connect(
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 535, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 892, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 1011, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+2021-08-06 23:17:22,546:DEBUG:discord.client: Dispatching event disconnect
+2021-08-06 23:17:22,546:ERROR:discord.client: Attempting a reconnect in 899.62s
+Traceback (most recent call last):
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 999, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 865, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\resolver.py", line 31, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Program Files\Python38\lib\asyncio\base_events.py", line 825, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Program Files\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Program Files\Python38\lib\socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\client.py", line 563, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Program Files\Python38\lib\asyncio\tasks.py", line 494, in wait_for
+    return fut.result()
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\gateway.py", line 305, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\http.py", line 967, in get_gateway
+    data = await self.request(Route('GET', '/gateway'))
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\http.py", line 192, in request
+    async with self.__session.request(method, url, **kwargs) as r:
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\client.py", line 1117, in __aenter__
+    self._resp = await self._coro
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\client.py", line 520, in _request
+    conn = await self._connector.connect(
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 535, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 892, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 1011, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+2021-08-06 23:32:22,186:DEBUG:discord.client: Dispatching event disconnect
+2021-08-06 23:32:22,187:ERROR:discord.client: Attempting a reconnect in 325.79s
+Traceback (most recent call last):
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 999, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 865, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\resolver.py", line 31, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Program Files\Python38\lib\asyncio\base_events.py", line 825, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Program Files\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Program Files\Python38\lib\socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\client.py", line 563, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Program Files\Python38\lib\asyncio\tasks.py", line 494, in wait_for
+    return fut.result()
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\gateway.py", line 305, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\http.py", line 967, in get_gateway
+    data = await self.request(Route('GET', '/gateway'))
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\http.py", line 192, in request
+    async with self.__session.request(method, url, **kwargs) as r:
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\client.py", line 1117, in __aenter__
+    self._resp = await self._coro
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\client.py", line 520, in _request
+    conn = await self._connector.connect(
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 535, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 892, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 1011, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+2021-08-06 23:37:47,980:DEBUG:discord.client: Dispatching event disconnect
+2021-08-06 23:37:47,980:ERROR:discord.client: Attempting a reconnect in 336.66s
+Traceback (most recent call last):
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 999, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 865, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\resolver.py", line 31, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Program Files\Python38\lib\asyncio\base_events.py", line 825, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Program Files\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Program Files\Python38\lib\socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\client.py", line 563, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Program Files\Python38\lib\asyncio\tasks.py", line 494, in wait_for
+    return fut.result()
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\gateway.py", line 305, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\http.py", line 967, in get_gateway
+    data = await self.request(Route('GET', '/gateway'))
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\http.py", line 192, in request
+    async with self.__session.request(method, url, **kwargs) as r:
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\client.py", line 1117, in __aenter__
+    self._resp = await self._coro
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\client.py", line 520, in _request
+    conn = await self._connector.connect(
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 535, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 892, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 1011, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+2021-08-06 23:43:24,652:DEBUG:discord.client: Dispatching event disconnect
+2021-08-06 23:43:24,652:ERROR:discord.client: Attempting a reconnect in 574.28s
+Traceback (most recent call last):
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 999, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 865, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\resolver.py", line 31, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Program Files\Python38\lib\asyncio\base_events.py", line 825, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Program Files\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Program Files\Python38\lib\socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\client.py", line 563, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Program Files\Python38\lib\asyncio\tasks.py", line 494, in wait_for
+    return fut.result()
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\gateway.py", line 305, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\http.py", line 967, in get_gateway
+    data = await self.request(Route('GET', '/gateway'))
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\http.py", line 192, in request
+    async with self.__session.request(method, url, **kwargs) as r:
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\client.py", line 1117, in __aenter__
+    self._resp = await self._coro
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\client.py", line 520, in _request
+    conn = await self._connector.connect(
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 535, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 892, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 1011, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+2021-08-06 23:52:58,957:DEBUG:discord.client: Dispatching event disconnect
+2021-08-06 23:52:58,957:ERROR:discord.client: Attempting a reconnect in 16.30s
+Traceback (most recent call last):
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 999, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 865, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\resolver.py", line 31, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Program Files\Python38\lib\asyncio\base_events.py", line 825, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Program Files\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Program Files\Python38\lib\socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\client.py", line 563, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Program Files\Python38\lib\asyncio\tasks.py", line 494, in wait_for
+    return fut.result()
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\gateway.py", line 305, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\http.py", line 967, in get_gateway
+    data = await self.request(Route('GET', '/gateway'))
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\http.py", line 192, in request
+    async with self.__session.request(method, url, **kwargs) as r:
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\client.py", line 1117, in __aenter__
+    self._resp = await self._coro
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\client.py", line 520, in _request
+    conn = await self._connector.connect(
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 535, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 892, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 1011, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+2021-08-06 23:53:15,277:DEBUG:discord.client: Dispatching event disconnect
+2021-08-06 23:53:15,278:ERROR:discord.client: Attempting a reconnect in 13.68s
+Traceback (most recent call last):
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 999, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 865, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\resolver.py", line 31, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Program Files\Python38\lib\asyncio\base_events.py", line 825, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Program Files\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Program Files\Python38\lib\socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\client.py", line 563, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Program Files\Python38\lib\asyncio\tasks.py", line 494, in wait_for
+    return fut.result()
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\gateway.py", line 305, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\http.py", line 967, in get_gateway
+    data = await self.request(Route('GET', '/gateway'))
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\http.py", line 192, in request
+    async with self.__session.request(method, url, **kwargs) as r:
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\client.py", line 1117, in __aenter__
+    self._resp = await self._coro
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\client.py", line 520, in _request
+    conn = await self._connector.connect(
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 535, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 892, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 1011, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+2021-08-06 23:53:28,976:DEBUG:discord.client: Dispatching event disconnect
+2021-08-06 23:53:28,976:ERROR:discord.client: Attempting a reconnect in 481.72s
+Traceback (most recent call last):
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 999, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 865, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\resolver.py", line 31, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Program Files\Python38\lib\asyncio\base_events.py", line 825, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Program Files\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Program Files\Python38\lib\socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\client.py", line 563, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Program Files\Python38\lib\asyncio\tasks.py", line 494, in wait_for
+    return fut.result()
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\gateway.py", line 305, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\http.py", line 967, in get_gateway
+    data = await self.request(Route('GET', '/gateway'))
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\http.py", line 192, in request
+    async with self.__session.request(method, url, **kwargs) as r:
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\client.py", line 1117, in __aenter__
+    self._resp = await self._coro
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\client.py", line 520, in _request
+    conn = await self._connector.connect(
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 535, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 892, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 1011, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+2021-08-07 00:01:30,704:DEBUG:discord.client: Dispatching event disconnect
+2021-08-07 00:01:30,705:ERROR:discord.client: Attempting a reconnect in 138.11s
+Traceback (most recent call last):
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 999, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 865, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\resolver.py", line 31, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Program Files\Python38\lib\asyncio\base_events.py", line 825, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Program Files\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Program Files\Python38\lib\socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\client.py", line 563, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Program Files\Python38\lib\asyncio\tasks.py", line 494, in wait_for
+    return fut.result()
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\gateway.py", line 305, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\http.py", line 967, in get_gateway
+    data = await self.request(Route('GET', '/gateway'))
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\http.py", line 192, in request
+    async with self.__session.request(method, url, **kwargs) as r:
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\client.py", line 1117, in __aenter__
+    self._resp = await self._coro
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\client.py", line 520, in _request
+    conn = await self._connector.connect(
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 535, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 892, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 1011, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+2021-08-07 00:03:48,827:DEBUG:discord.client: Dispatching event disconnect
+2021-08-07 00:03:48,827:ERROR:discord.client: Attempting a reconnect in 892.28s
+Traceback (most recent call last):
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 999, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 865, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\resolver.py", line 31, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Program Files\Python38\lib\asyncio\base_events.py", line 825, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Program Files\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Program Files\Python38\lib\socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\client.py", line 563, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Program Files\Python38\lib\asyncio\tasks.py", line 494, in wait_for
+    return fut.result()
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\gateway.py", line 305, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\http.py", line 967, in get_gateway
+    data = await self.request(Route('GET', '/gateway'))
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\http.py", line 192, in request
+    async with self.__session.request(method, url, **kwargs) as r:
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\client.py", line 1117, in __aenter__
+    self._resp = await self._coro
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\client.py", line 520, in _request
+    conn = await self._connector.connect(
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 535, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 892, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 1011, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+2021-08-07 00:18:41,127:DEBUG:discord.client: Dispatching event disconnect
+2021-08-07 00:18:41,128:ERROR:discord.client: Attempting a reconnect in 905.18s
+Traceback (most recent call last):
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 999, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 865, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\resolver.py", line 31, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Program Files\Python38\lib\asyncio\base_events.py", line 825, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Program Files\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Program Files\Python38\lib\socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\client.py", line 563, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Program Files\Python38\lib\asyncio\tasks.py", line 494, in wait_for
+    return fut.result()
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\gateway.py", line 305, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\http.py", line 967, in get_gateway
+    data = await self.request(Route('GET', '/gateway'))
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\http.py", line 192, in request
+    async with self.__session.request(method, url, **kwargs) as r:
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\client.py", line 1117, in __aenter__
+    self._resp = await self._coro
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\client.py", line 520, in _request
+    conn = await self._connector.connect(
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 535, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 892, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 1011, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+2021-08-07 00:33:46,320:DEBUG:discord.client: Dispatching event disconnect
+2021-08-07 00:33:46,321:ERROR:discord.client: Attempting a reconnect in 1023.99s
+Traceback (most recent call last):
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 999, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 865, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\resolver.py", line 31, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Program Files\Python38\lib\asyncio\base_events.py", line 825, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Program Files\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Program Files\Python38\lib\socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\client.py", line 563, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Program Files\Python38\lib\asyncio\tasks.py", line 494, in wait_for
+    return fut.result()
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\gateway.py", line 305, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\http.py", line 967, in get_gateway
+    data = await self.request(Route('GET', '/gateway'))
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\http.py", line 192, in request
+    async with self.__session.request(method, url, **kwargs) as r:
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\client.py", line 1117, in __aenter__
+    self._resp = await self._coro
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\client.py", line 520, in _request
+    conn = await self._connector.connect(
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 535, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 892, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 1011, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+2021-08-07 00:50:50,331:DEBUG:discord.client: Dispatching event disconnect
+2021-08-07 00:50:50,331:ERROR:discord.client: Attempting a reconnect in 224.33s
+Traceback (most recent call last):
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 999, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 865, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\resolver.py", line 31, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Program Files\Python38\lib\asyncio\base_events.py", line 825, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Program Files\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Program Files\Python38\lib\socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\client.py", line 563, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Program Files\Python38\lib\asyncio\tasks.py", line 494, in wait_for
+    return fut.result()
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\gateway.py", line 305, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\http.py", line 967, in get_gateway
+    data = await self.request(Route('GET', '/gateway'))
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\http.py", line 192, in request
+    async with self.__session.request(method, url, **kwargs) as r:
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\client.py", line 1117, in __aenter__
+    self._resp = await self._coro
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\client.py", line 520, in _request
+    conn = await self._connector.connect(
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 535, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 892, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 1011, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+2021-08-07 00:54:34,677:DEBUG:discord.client: Dispatching event disconnect
+2021-08-07 00:54:34,677:ERROR:discord.client: Attempting a reconnect in 358.71s
+Traceback (most recent call last):
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 999, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 865, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\resolver.py", line 31, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Program Files\Python38\lib\asyncio\base_events.py", line 825, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Program Files\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Program Files\Python38\lib\socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\client.py", line 563, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Program Files\Python38\lib\asyncio\tasks.py", line 494, in wait_for
+    return fut.result()
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\gateway.py", line 305, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\http.py", line 967, in get_gateway
+    data = await self.request(Route('GET', '/gateway'))
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\http.py", line 192, in request
+    async with self.__session.request(method, url, **kwargs) as r:
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\client.py", line 1117, in __aenter__
+    self._resp = await self._coro
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\client.py", line 520, in _request
+    conn = await self._connector.connect(
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 535, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 892, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 1011, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+2021-08-07 01:00:33,399:DEBUG:discord.client: Dispatching event disconnect
+2021-08-07 01:00:33,399:ERROR:discord.client: Attempting a reconnect in 923.11s
+Traceback (most recent call last):
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 999, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 865, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\resolver.py", line 31, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Program Files\Python38\lib\asyncio\base_events.py", line 825, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Program Files\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Program Files\Python38\lib\socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\client.py", line 563, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Program Files\Python38\lib\asyncio\tasks.py", line 494, in wait_for
+    return fut.result()
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\gateway.py", line 305, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\http.py", line 967, in get_gateway
+    data = await self.request(Route('GET', '/gateway'))
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\http.py", line 192, in request
+    async with self.__session.request(method, url, **kwargs) as r:
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\client.py", line 1117, in __aenter__
+    self._resp = await self._coro
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\client.py", line 520, in _request
+    conn = await self._connector.connect(
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 535, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 892, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 1011, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+2021-08-07 01:15:56,526:DEBUG:discord.client: Dispatching event disconnect
+2021-08-07 01:15:56,526:ERROR:discord.client: Attempting a reconnect in 458.21s
+Traceback (most recent call last):
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 999, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 865, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\resolver.py", line 31, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Program Files\Python38\lib\asyncio\base_events.py", line 825, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Program Files\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Program Files\Python38\lib\socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\client.py", line 563, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Program Files\Python38\lib\asyncio\tasks.py", line 494, in wait_for
+    return fut.result()
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\gateway.py", line 305, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\http.py", line 967, in get_gateway
+    data = await self.request(Route('GET', '/gateway'))
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\http.py", line 192, in request
+    async with self.__session.request(method, url, **kwargs) as r:
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\client.py", line 1117, in __aenter__
+    self._resp = await self._coro
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\client.py", line 520, in _request
+    conn = await self._connector.connect(
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 535, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 892, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 1011, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+2021-08-07 01:23:34,741:DEBUG:discord.client: Dispatching event disconnect
+2021-08-07 01:23:34,741:ERROR:discord.client: Attempting a reconnect in 438.08s
+Traceback (most recent call last):
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 999, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 865, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\resolver.py", line 31, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Program Files\Python38\lib\asyncio\base_events.py", line 825, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Program Files\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Program Files\Python38\lib\socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\client.py", line 563, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Program Files\Python38\lib\asyncio\tasks.py", line 494, in wait_for
+    return fut.result()
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\gateway.py", line 305, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\http.py", line 967, in get_gateway
+    data = await self.request(Route('GET', '/gateway'))
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\http.py", line 192, in request
+    async with self.__session.request(method, url, **kwargs) as r:
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\client.py", line 1117, in __aenter__
+    self._resp = await self._coro
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\client.py", line 520, in _request
+    conn = await self._connector.connect(
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 535, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 892, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 1011, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+2021-08-07 01:30:52,832:DEBUG:discord.client: Dispatching event disconnect
+2021-08-07 01:30:52,833:ERROR:discord.client: Attempting a reconnect in 373.29s
+Traceback (most recent call last):
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 999, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 865, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\resolver.py", line 31, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Program Files\Python38\lib\asyncio\base_events.py", line 825, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Program Files\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Program Files\Python38\lib\socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\client.py", line 563, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Program Files\Python38\lib\asyncio\tasks.py", line 494, in wait_for
+    return fut.result()
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\gateway.py", line 305, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\http.py", line 967, in get_gateway
+    data = await self.request(Route('GET', '/gateway'))
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\http.py", line 192, in request
+    async with self.__session.request(method, url, **kwargs) as r:
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\client.py", line 1117, in __aenter__
+    self._resp = await self._coro
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\client.py", line 520, in _request
+    conn = await self._connector.connect(
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 535, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 892, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 1011, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+2021-08-07 01:37:06,146:DEBUG:discord.client: Dispatching event disconnect
+2021-08-07 01:37:06,147:ERROR:discord.client: Attempting a reconnect in 654.55s
+Traceback (most recent call last):
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 999, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 865, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\resolver.py", line 31, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Program Files\Python38\lib\asyncio\base_events.py", line 825, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Program Files\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Program Files\Python38\lib\socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\client.py", line 563, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Program Files\Python38\lib\asyncio\tasks.py", line 494, in wait_for
+    return fut.result()
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\gateway.py", line 305, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\http.py", line 967, in get_gateway
+    data = await self.request(Route('GET', '/gateway'))
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\http.py", line 192, in request
+    async with self.__session.request(method, url, **kwargs) as r:
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\client.py", line 1117, in __aenter__
+    self._resp = await self._coro
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\client.py", line 520, in _request
+    conn = await self._connector.connect(
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 535, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 892, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 1011, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+2021-08-07 01:48:00,713:DEBUG:discord.client: Dispatching event disconnect
+2021-08-07 01:48:00,713:ERROR:discord.client: Attempting a reconnect in 63.43s
+Traceback (most recent call last):
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 999, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 865, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\resolver.py", line 31, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Program Files\Python38\lib\asyncio\base_events.py", line 825, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Program Files\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Program Files\Python38\lib\socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\client.py", line 563, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Program Files\Python38\lib\asyncio\tasks.py", line 494, in wait_for
+    return fut.result()
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\gateway.py", line 305, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\http.py", line 967, in get_gateway
+    data = await self.request(Route('GET', '/gateway'))
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\http.py", line 192, in request
+    async with self.__session.request(method, url, **kwargs) as r:
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\client.py", line 1117, in __aenter__
+    self._resp = await self._coro
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\client.py", line 520, in _request
+    conn = await self._connector.connect(
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 535, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 892, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 1011, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+2021-08-07 01:49:04,155:DEBUG:discord.client: Dispatching event disconnect
+2021-08-07 01:49:04,156:ERROR:discord.client: Attempting a reconnect in 339.05s
+Traceback (most recent call last):
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 999, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 865, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\resolver.py", line 31, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Program Files\Python38\lib\asyncio\base_events.py", line 825, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Program Files\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Program Files\Python38\lib\socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\client.py", line 563, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Program Files\Python38\lib\asyncio\tasks.py", line 494, in wait_for
+    return fut.result()
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\gateway.py", line 305, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\http.py", line 967, in get_gateway
+    data = await self.request(Route('GET', '/gateway'))
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\http.py", line 192, in request
+    async with self.__session.request(method, url, **kwargs) as r:
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\client.py", line 1117, in __aenter__
+    self._resp = await self._coro
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\client.py", line 520, in _request
+    conn = await self._connector.connect(
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 535, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 892, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 1011, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+2021-08-07 01:54:43,222:DEBUG:discord.client: Dispatching event disconnect
+2021-08-07 01:54:43,223:ERROR:discord.client: Attempting a reconnect in 137.66s
+Traceback (most recent call last):
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 999, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 865, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\resolver.py", line 31, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Program Files\Python38\lib\asyncio\base_events.py", line 825, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Program Files\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Program Files\Python38\lib\socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\client.py", line 563, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Program Files\Python38\lib\asyncio\tasks.py", line 494, in wait_for
+    return fut.result()
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\gateway.py", line 305, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\http.py", line 967, in get_gateway
+    data = await self.request(Route('GET', '/gateway'))
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\discord\http.py", line 192, in request
+    async with self.__session.request(method, url, **kwargs) as r:
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\client.py", line 1117, in __aenter__
+    self._resp = await self._coro
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\client.py", line 520, in _request
+    conn = await self._connector.connect(
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 535, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 892, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "F:\DIaz\WORK\BOT\project-kacang-master\env\lib\site-packages\aiohttp\connector.py", line 1011, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]

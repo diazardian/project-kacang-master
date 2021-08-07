@@ -1,15 +1,12 @@
-import json
+from asyncio.windows_events import NULL
+import requests
 
-with open('shop.json', 'r') as myfile:
-    data=myfile.read()
+user = str(3934657916740567)
 
-obj = json.loads(data)
-obj = obj['makanan'] + obj['minuman']
-print(obj)
-
-# stock = []
-for i in obj:
-    if i['name'] == 'ayam':
-        stock = ((i['stock']))
-
-print(stock)
+URL = "http://127.0.0.1:8000/api/DiscordMember/" + user
+data = requests.get(url=URL).json()
+print(data)
+# if data == []:
+#     print('ok')
+# else:
+#     print('tidak oke')

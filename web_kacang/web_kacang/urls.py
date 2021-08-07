@@ -16,10 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from django.conf.urls import include
-from kacang.views import index
+from kacang.views import *
+from .routers import router
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('api/', include(router.urls)),
     path('discordbot/', include('discordbot.urls')),
-    path('', index),
+    path('', index, name='home'),
 ]
