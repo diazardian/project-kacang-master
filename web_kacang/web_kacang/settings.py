@@ -77,24 +77,24 @@ WSGI_APPLICATION = "web_kacang.wsgi.application"
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 DATABASES = {
+    # "default": {
+    #     "ENGINE": "django.db.backends.mysql",
+    #     "NAME": "kacang",
+    #     "USER": "root",
+    #     "PASSWORD": "12345678",
+    #     "HOST": "localhost",
+    #     "PORT": "3306",
+    #     "OPTIONS": {"init_command": "SET sql_mode='STRICT_TRANS_TABLES'"},
+    # },
     "default": {
         "ENGINE": "django.db.backends.mysql",
         "NAME": "kacang",
-        "USER": "root",
-        "PASSWORD": "12345678",
-        "HOST": "localhost",
+        "USER": "admin",
+        "PASSWORD": "password",
+        "HOST": "13.76.42.232",
         "PORT": "3306",
         "OPTIONS": {"init_command": "SET sql_mode='STRICT_TRANS_TABLES'"},
-    },
-    # "default": {
-    #     "ENGINE": "django.db.backends.mysql",
-    #     "NAME": "diazardian$kacang",
-    #     "USER": "diazardian",
-    #     "PASSWORD": "Akurapopo1",
-    #     "HOST": "diazardian.mysql.pythonanywhere-services.com",
-    #     "PORT": "3306",
-    #     "OPTIONS": {"init_command": "SET sql_mode='STRICT_TRANS_TABLES'"},
-    # }
+    }
 }
 
 

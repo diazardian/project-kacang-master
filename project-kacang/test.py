@@ -1,11 +1,19 @@
-from asyncio.windows_events import NULL
 import requests
+import os
+from dotenv import load_dotenv
+import json
 
-user = str(3934657916740567)
+load_dotenv()
+api = os.getenv("API_ENDPOINT")
 
-URL = "http://127.0.0.1:8000/api/DiscordMember/" + user
-data = requests.get(url=URL).json()
-print(data)
+aidi = str(809785532962832414)
+name = "SEJUTA KACANG"
+
+url = api + "MemberGuild/"
+headers = {"Content-Type": "application/json"}
+data = {"id_guild": aidi, "name": name}
+result = requests.post(url, data=json.dumps(data), headers=headers)
+print(result)
 # if data == []:
 #     print('ok')
 # else:

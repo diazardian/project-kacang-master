@@ -2,6 +2,7 @@ import discord
 from discord import colour
 from discord.ext import commands
 from disputils import BotEmbedPaginator, BotConfirmation, BotMultipleChoice
+from dotenv import load_dotenv
 import json
 import os
 import random
@@ -24,6 +25,10 @@ handler.setFormatter(
     logging.Formatter("%(asctime)s:%(levelname)s:%(name)s: %(message)s")
 )
 logger.addHandler(handler)
+
+load_dotenv()
+token = os.getenv("TOKEN_KEY")
+api = os.getenv("API_ENDPOINT")
 
 # os.chdir("E:\\DIaz\\WORK\\BOT\\project-kacang-master\\project-kacang")
 # os.chdir("/Users/laboratoriumaudit2/Public/Diaz/project-kacang")
@@ -61,7 +66,7 @@ async def cmd(ctx):
 @client.command()
 async def test(ctx):
     param_id = str(ctx.guild.owner_id)
-    URL = f"http://127.0.0.1:8000/api/DiscordMember/{param_id}/"
+    URL = api + f"DiscordMember/{param_id}/"
     data = requests.get(url=URL).json()
     if data["id_discord"] == str(ctx.author.id):
         embed = discord.Embed(description="Pemilik Server!", color=discord.Color.blue())
@@ -569,4 +574,4 @@ async def suara(ctx, channel: discord.TextChannel, *, content: str):
     await channel.send(file=data)
 
 
-client.run("ODI1MzY4ODkwOTc2NTAxODEw.YF86rg.flMGiRjn9aPnSpOgB6hQLRWQTZc")
+client.run(token)

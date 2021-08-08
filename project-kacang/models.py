@@ -1,20 +1,26 @@
 import json
 import requests
+import os
+from dotenv import load_dotenv
 
-API_ENDPOINT = "http://127.0.0.1:8000/api/"
+# local
+# API_ENDPOINT = "http://127.0.0.1:8000/api/"
 client = requests.session()
+load_dotenv()
+api = os.getenv("API_ENDPOINT")
+
 
 class Init:
     def guild_register(aidi, name):
-        url = API_ENDPOINT + "MemberGuild/"
+        url = api + "MemberGuild/"
         headers = {"Content-Type": "application/json"}
         data = {"id_guild": aidi, "name": name}
         result = requests.post(url, data=json.dumps(data), headers=headers)
+        print(result)
         return result
 
-
     def member_register(aidi, name, avatar, user_join, user_create, guild_id):
-        url = API_ENDPOINT + "DiscordMember/"
+        url = api + "DiscordMember/"
         headers = {
             "Content-Type": "application/json",
             "Referer": url,
@@ -31,7 +37,7 @@ class Init:
         return result
 
     def setup(aidi, name, status):
-        url = API_ENDPOINT + "GuildChannel/"
+        url = api + "GuildChannel/"
         headers = {
             "Content-Type": "application/json",
             "Referer": url,
